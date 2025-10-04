@@ -81,7 +81,7 @@
         }
 
         .phone-btn:hover {
-            background-color: #134a85;
+            background-color: #4f8a1e;;
             color: white;
             transform: scale(1.1);
             text-decoration: none;
@@ -228,11 +228,11 @@
     <div class="header-inner">
         <div class="container">
             <div class="inner">
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="col-lg-3 col-md-3 col-12">
                         <!-- Start Logo -->
                         <div class="logo">
-                            <a href="index.html"><img src="img/logo1.png" style="height: 100px;width: auto;" alt="Runway Packers"></a>
+                            <a href="index.html"><img src="img/logo1.png" style="height: 100px;width: auto;" alt="PopAppz"></a>
                         </div>
                         <!-- End Logo -->
                         <!-- Mobile Nav -->
@@ -243,17 +243,16 @@
                         <!-- Main Menu -->
                         <div class="main-menu">
                             <nav class="navigation">
-                                <ul class="nav menu">
+                                <ul class="nav menu d-flex align-items-center justify-content-end">
                                     <li class="active"><a href="index.html">Home</a></li>
                                     <li><a href="about.html">About Us</a></li>
-                                    <li><a href="service.html">Services</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
-                                    <li><a href="">Admin Login</a></li>
-                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="services.html">Services</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                    <li><a href="clients.html">Clients</a></li>
                                     <li>
-                                        <a href="" class="btn"
-                                           style="background-color:  #5CAB23; color: #fff; font-weight: 600; border-radius: 50px; padding: 10px 25px;">
-                                           Track Shipment
+                                        <a href="contact.html" class="btn"
+                                           style="background-color: #5CAB23; color: #fff; font-weight: 600; padding: 8px 20px; border-radius: 5px; margin-left: 15px;">
+                                           Contact Us
                                         </a>
                                     </li>
                                 </ul>
@@ -267,6 +266,7 @@
     </div>
     <!--/ End Header Inner -->
 </header>
+
 
         <!-- Slider Area -->
         <section class="slider" style="padding-top: 10px;">
@@ -479,7 +479,6 @@
             </div>
         </div>
 
-        <!-- Auto-scrolling Gallery -->
         <div class="gallery-wrapper">
             <div class="gallery-scroll" id="autoGallery">
                 <div class="gallery-item">
@@ -528,7 +527,7 @@
 .gallery-scroll {
     display: flex;
     gap: 20px;
-    animation: scrollGallery 6s linear infinite; /* auto scroll */
+    animation: scrollGallery 10s linear infinite; /* auto scroll */
 }
 
 .gallery-item {
@@ -541,9 +540,9 @@
 
 .gallery-item img {
     width: 100%;
-    height: 150px;
+    height: 250px;
     object-fit: cover;
-    display: block;
+    display: inline-block;
 }
 
 /* Keyframes for auto-scrolling */
@@ -558,7 +557,7 @@
 
         <!-- Start Fun-facts -->
         <div id="fun-facts" class="fun-facts section overlay"
-     style="position: relative; background: url('img/counter.avif') no-repeat center center/cover;">
+     style="position: relative; background: url('img/counter.jpg') no-repeat center center/cover;">
     <!-- Overlay -->
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(121, 177, 48, 0.6);">
     </div>
@@ -667,90 +666,105 @@
 </section>
 
 
-<section class="features section" style="padding-top: 0px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-title text-center mb-5">
-                    <h2>We Are Working With</h2>
-                    <p>Highlighting our strategic tie-ups, collaborative projects, and innovative software solutions delivered with our partners.</p>
-                </div>
-            </div>
+<section class="partners section" style="padding-top: 0px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-title text-center mb-5">
+          <h2>We Are Working With</h2>
+          <p>Highlighting our strategic tie-ups, collaborative projects, and innovative software solutions delivered with our partners.</p>
         </div>
-
-        <!-- Auto-scrolling Gallery -->
-        <div class="gallery-wrapper">
-            <div class="gallery-scroll" id="autoGallery">
-                <div class="gallery-item">
-                    <img src="img/trucks.jpg" alt="Trucks" />
-                </div>
-                <div class="gallery-item">
-                    <img src="img/all transport.PNG" alt="All Transport" />
-                </div>
-                <div class="gallery-item">
-                    <img src="img/box.jpg" alt="Storage" />
-                </div>
-                <div class="gallery-item">
-                    <img src="img/warehouse.jpg" alt="Warehouse" />
-                </div>
-                <div class="gallery-item">
-                    <img src="img/moving-team.jpg" alt="Moving Team" />
-                </div>
-                <!-- Duplicate items for seamless loop -->
-                <div class="gallery-item">
-                    <img src="img/trucks.jpg" alt="Trucks" />
-                </div>
-                <div class="gallery-item">
-                    <img src="img/all transport.PNG" alt="All Transport" />
-                </div>
-                <div class="gallery-item">
-                    <img src="img/box.jpg" alt="Storage" />
-                </div>
-                <div class="gallery-item">
-                    <img src="img/warehouse.jpg" alt="Warehouse" />
-                </div>
-                <div class="gallery-item">
-                    <img src="img/moving-team.jpg" alt="Moving Team" />
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+
+    <div class="partners-wrapper">
+      <div class="partners-scroll">
+        <!-- Original 19 logos -->
+        <div class="partner-item"><img src="img/GrowMart.JPEG" alt="GrowMart" /></div>
+        <div class="partner-item"><img src="img/Aduppankarai.jpg" alt="Aduppankarai" /></div>
+        <div class="partner-item"><img src="img/Agri Connect.png" alt="Agri Connect" /></div>
+        <div class="partner-item"><img src="img/Alize Software Services and Publishers.webp" alt="Alize Software" /></div>
+        <div class="partner-item"><img src="img/Decode Logo.png" alt="Decode Logo" /></div>
+        <div class="partner-item"><img src="img/Royal Cavery.JPG" alt="Royal Cavery" /></div>
+        <div class="partner-item"><img src="img/iconic global.png" alt="Iconic Global" /></div>
+        <div class="partner-item"><img src="img/Inspa.jpg" alt="Inspa" /></div>
+        <div class="partner-item"><img src="img/dairy.PNG" alt="Dairy Products" /></div>
+        <div class="partner-item"><img src="img/Kalaivani Electricals.png" alt="Kalaivani Electricals" /></div>
+        <div class="partner-item"><img src="img/logo-mytech.png" alt="logo-mytech" /></div>
+        <div class="partner-item"><img src="img/MN Industries.jpg" alt="MN Industries" /></div>
+        <div class="partner-item"><img src="img/NDA Technology.png" alt="NDA Technology" /></div>
+        <div class="partner-item"><img src="img/Mohita.png" alt="Mohita" /></div>
+        <div class="partner-item"><img src="img/Sairam Institutions.png" alt="Sairam Institutions" /></div>
+        <div class="partner-item"><img src="img/Sairam Techno Incubator.webp" alt="Sairam Techno Incubator" /></div>
+        <div class="partner-item"><img src="img/Tamil Business World.jpg" alt="Tamil Business World" /></div>
+        <div class="partner-item"><img src="img/The Pentagreen.png" alt="The Pentagreen" /></div>
+        <div class="partner-item"><img src="img/Vaarthai Viyaabari.jpg" alt="Vaarthai Viyaabari" /></div>
+
+        <!-- Duplicate all 19 logos for seamless loop -->
+        <div class="partner-item"><img src="img/GrowMart.JPEG" alt="GrowMart" /></div>
+        <div class="partner-item"><img src="img/Aduppankarai.jpg" alt="Aduppankarai" /></div>
+        <div class="partner-item"><img src="img/Agri Connect.png" alt="Agri Connect" /></div>
+        <div class="partner-item"><img src="img/Alize Software Services and Publishers.webp" alt="Alize Software" /></div>
+        <div class="partner-item"><img src="img/Decode Logo.png" alt="Decode Logo" /></div>
+        <div class="partner-item"><img src="img/Royal Cavery.JPG" alt="Royal Cavery" /></div>
+        <div class="partner-item"><img src="img/iconic global.png" alt="Iconic Global" /></div>
+        <div class="partner-item"><img src="img/Inspa.jpg" alt="Inspa" /></div>
+        <div class="partner-item"><img src="img/dairy.PNG" alt="Dairy Products" /></div>
+        <div class="partner-item"><img src="img/Kalaivani Electricals.png" alt="Kalaivani Electricals" /></div>
+        <div class="partner-item"><img src="img/logo-mytech.png" alt="logo-mytech" /></div>
+        <div class="partner-item"><img src="img/MN Industries.jpg" alt="MN Industries" /></div>
+        <div class="partner-item"><img src="img/NDA Technology.png" alt="NDA Technology" /></div>
+        <div class="partner-item"><img src="img/Mohita.png" alt="Mohita" /></div>
+        <div class="partner-item"><img src="img/Sairam Institutions.png" alt="Sairam Institutions" /></div>
+        <div class="partner-item"><img src="img/Sairam Techno Incubator.webp" alt="Sairam Techno Incubator" /></div>
+        <div class="partner-item"><img src="img/Tamil Business World.jpg" alt="Tamil Business World" /></div>
+        <div class="partner-item"><img src="img/The Pentagreen.png" alt="The Pentagreen" /></div>
+        <div class="partner-item"><img src="img/Vaarthai Viyaabari.jpg" alt="Vaarthai Viyaabari" /></div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <style>
-.gallery-wrapper {
-    overflow: hidden; /* hide scrollbar */
-    position: relative;
-    padding: 10px 0;
+.partners-wrapper {
+  overflow: hidden;
+  padding: 10px 0;
 }
 
-.gallery-scroll {
-    display: flex;
-    gap: 20px;
-    animation: scrollGallery 10s linear infinite; /* auto scroll */
+.partners-scroll {
+  display: flex;
+  gap: 40px;
+  flex-wrap: nowrap;
+  animation: scrollPartners 50s linear infinite; /* adjust speed */
 }
 
-.gallery-item {
-    min-width: 300px;
-    flex: 0 0 auto;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+.partner-item {
+  min-width: 180px;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
 }
 
-.gallery-item img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    display: block;
+.partner-item img {
+  max-width: 100%;
+  max-height: 80px;
+  object-fit: contain;
+  display: block;
 }
 
-/* Keyframes for auto-scrolling */
-@keyframes scrollGallery {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); } /* move half of total width */
+/* Animate full scroll of duplicated set */
+@keyframes scrollPartners {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-380%); } /* move full width of first 19 logos */
 }
 </style>
+
+
 
         <!--/ End Why Choose Us -->
 
@@ -758,23 +772,23 @@
         <section class="call-action overlay"
             style="position: relative; background: url('img/call-action-bg.jpg') no-repeat center center/cover;">
             <div
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(23, 86, 155, 0.7);">
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6);">
             </div>
             <div class="container" style="position: relative; z-index: 1; padding-top: 0px; padding-bottom: 0px;">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-12 text-center">
                         <div class="content">
-                            <h2 style="margin-bottom: 20px;">Looking for Reliable Moving & Logistics Solutions?</h2>
+                            <h2 style="margin-bottom: 20px;">Transform Your Ideas Into Cutting Edge Apps</h2>
                             <h5 style="color: #fff; margin-bottom: 20px;">Call Us Now: <a href="tel:+91 9176867827"
-                                    style="color: #fff;">+91 91768 67827</a></h5>
-                            <p style="margin-bottom: 30px;">Runway Packers provides efficient, secure, and on-time
-                                relocation services for homes, offices, and businesses across India.</p>
+                                    style="color: #fff;">+91 </a></h5>
+                            <p style="margin-bottom: 30px;"> PopAppz helps businesses build innovative, user-friendly mobile and web apps that bring ideas to life.
+</p>
                             <div class="button mt-3">
                                 <a href="tel:+918973922636" class="btn"
                                     style="background-color:  #5CAB23; color: #fff; border: none; padding: 12px 30px;">Call
                                     Now</a>
                                 <a href="contact.html" class="btn"
-                                    style="background-color: #419ec9; color: #fff; border: none; padding: 12px 30px;">Get
+                                    style="background-color:#4f8a1e; color: #fff; border: none; padding: 12px 30px;">Get
                                     a Quote <i class="fa fa-long-arrow-right"></i></a>
                             </div>
                         </div>
@@ -863,167 +877,158 @@
 
         <!-- Start Booking -->
         <section class="booking section" style="background-color: #f9f9f9; padding: 60px 0;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <div class="section-title mb-4">
-                            <h2>Book Your Relocation & Logistics Service</h2>
-                            <p>Schedule your home, office, or vehicle relocation easily and let Runway Packers handle
-                                the rest.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row align-items-center">
-                    <!-- Booking Description -->
-                    <div class="col-lg-6 col-md-12 col-12">
-                        <div class="booking-description">
-                            <p>
-                                Runway Packers provides reliable, safe, and timely moving and logistics solutions.
-                                Whether it's household shifting, office relocation, vehicle transport, or freight
-                                services, our team ensures a hassle-free experience from start to finish.
-                            </p>
-                            <div class="form-group mt-4 ">
-                                <a href="" class="btn"
-                                    style="background-color:  #5CAB23; color: #fff; padding: 12px 35px; border-radius: 5px;width: 350px;">Book
-                                    Now</a>
-                            </div>
-                            <p class="mt-3 text-muted" style="font-size: 14px;">Our team will contact you to confirm
-                                your booking and provide any assistance needed.</p>
-                        </div>
-                    </div>
-
-                    <!-- Booking Image -->
-                    <div class="col-lg-6 col-md-12 col-12 text-center">
-                        <div class="booking-image">
-                            <img src="img/booking.png" alt="Runway Packers Booking Illustration"
-                                style="width: 60%; max-width: 350px;">
-                        </div>
-                    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="section-title mb-4">
+                    <h2>Book Your App Development Consultation</h2>
+                    <p>Schedule a session with PopAppz to discuss your mobile or web application ideas and get expert guidance.</p>
                 </div>
             </div>
-        </section>
+        </div>
+        <div class="row align-items-center">
+            <!-- Booking Description -->
+            <div class="col-lg-6 col-md-12 col-12">
+                <div class="booking-description">
+                    <p>
+                        PopAppz helps startups and businesses build innovative, scalable, and user-friendly mobile and web applications. 
+                        Connect with our experts to plan, design, and develop solutions tailored to your business needs.
+                    </p>
+                    <div class="form-group mt-4">
+                        <a href="contact.html" class="btn"
+                            style="background-color:  #5CAB23; color: #fff; padding: 12px 35px; border-radius: 5px; width: 350px;">
+                            Book Now
+                        </a>
+                    </div>
+                    <p class="mt-3 text-muted" style="font-size: 14px;">
+                        Our team will get in touch to discuss your project requirements and provide expert assistance.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Booking Image -->
+            <div class="col-lg-6 col-md-12 col-12 text-center">
+                <div class="booking-image">
+                    <img src="img/booking.png" alt="PopAppz Consultation Illustration"
+                        style="width: 90%;height: auto; max-width: 350px;border-radius: 20px;">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
         <!-- End Booking -->
 
         <!-- Start Newsletter Area -->
         <section class="newsletter section">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-12">
-                        <!-- Start Newsletter Text -->
-                        <div class="subscribe-text">
-                            <h6 style="color:  #5CAB23; font-weight: 600;">Subscribe to Runway Packers Newsletter</h6>
-                            <p>Stay updated with moving tips, exclusive offers, and the latest news on our relocation
-                                and logistics services.</p>
-                        </div>
-                        <!-- End Newsletter Text -->
-                    </div>
-                    <div class="col-lg-6 col-12">
-                        <!-- Start Newsletter Form -->
-                        <div class="subscribe-form">
-                            <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner d-flex">
-                                <input name="EMAIL" type="email" placeholder="Enter your email"
-                                    class="common-input flex-grow-1" onfocus="this.placeholder = ''"
-                                    onblur="this.placeholder = 'Enter your email'" required>
-                                <button class="btn" style="background-color:  #5CAB23;">Subscribe</button>
-                            </form>
-                        </div>
-                        <!-- End Newsletter Form -->
-                    </div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-12">
+                <!-- Start Newsletter Text -->
+                <div class="subscribe-text">
+                    <h6 style="color:  #5CAB23; font-weight: 600;">Subscribe to PopAppz Updates</h6>
+                    <p>Get the latest insights on mobile & web app development, digital solutions, and exclusive PopAppz updates directly to your inbox.</p>
                 </div>
+                <!-- End Newsletter Text -->
             </div>
-        </section>
+            <div class="col-lg-6 col-12">
+                <!-- Start Newsletter Form -->
+                <div class="subscribe-form">
+                    <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner d-flex">
+                        <input name="EMAIL" type="email" placeholder="Enter your email"
+                            class="common-input flex-grow-1" onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Enter your email'" required>
+                        <button class="btn" style="background-color:  #5CAB23;">Subscribe</button>
+                    </form>
+                </div>
+                <!-- End Newsletter Form -->
+            </div>
+        </div>
+    </div>
+</section>
+
         <!-- /End Newsletter Area -->
 
         <!-- Footer Area -->
-        <footer id="footer" class="footer">
-            <!-- Footer Top -->
-            <div class="footer-top">
-                <div class="container">
-                    <div class="row">
-                        <!-- About Us -->
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <div class="single-footer">
-                                <h2>About Us</h2>
-                                <p>Runway Packers & Movers provides reliable and efficient freight, courier, and cargo
-                                    services across India.</p>
-                                <!-- Social Media -->
-                                <ul class="social">
-                                    <li><a href="#"><i class="icofont-facebook"></i></a></li>
-                                    <li>
-                                        <a href="https://wa.me/919789989120" target="_blank">
-                                            <i class="icofont-whatsapp"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="tel:+919176867827">
-                                            <i class="icofont-ui-call"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <!-- End Social Media -->
-                            </div>
-                        </div>
+       <footer id="footer" class="footer">
+    <!-- Footer Top -->
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <!-- About Us -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="single-footer">
+                        <h2>About PopAppz</h2>
+                        <p>PopAppz delivers innovative mobile and web application solutions, helping businesses transform ideas into seamless digital experiences.</p>
+                        <!-- Social Media -->
+                        <ul class="social">
+                            <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                            <li>
+        <a href="#">
+            <i class="icofont-twitter"></i>
+        </a>
+    </li>
+    <li>
+        <a href="https://www.instagram.com/pop_appz/" target="_blank">
+            <i class="icofont-instagram"></i>
+        </a>
+    </li>
+    <li>
+        <a href="https://www.linkedin.com/company/popappz-software-solutions-llp/?viewAsMember=true" target="_blank">
+            <i class="icofont-linkedin"></i>
+        </a>
+    </li>
 
-                        <!-- Quick Links -->
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <div class="single-footer f-link">
-                                <h2>Quick Links</h2>
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-12">
-                                        <ul>
-                                            <li><a href="index.html"><i class="fa fa-caret-right"
-                                                        aria-hidden="true"></i>Home</a></li>
-                                            <li><a href="about.html"><i class="fa fa-caret-right"
-                                                        aria-hidden="true"></i>About Us</a></li>
-                                            <li><a href="service.html"><i class="fa fa-caret-right"
-                                                        aria-hidden="true"></i>Services</a></li>
-                                            <li><a href="contact.html"><i class="fa fa-caret-right"
-                                                        aria-hidden="true"></i>Contact</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Contact Us (shifted left) -->
-                        <div class="col-lg-3 col-md-6 col-12" style="margin-left: 0px;">
-                            <div class="single-footer">
-                                <h2>Contact Us</h2>
-                                
-                                <p style="margin-left: -5px;">+91 91768 67827,<br>+91 9789989120</p>
-                                <p style="margin-left: -5px;"> <a
-                                        href="mailto:runwaypackersandmovers@gmail.com">runwaypackersandmovers@gmail.com</a>
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Our Location (shifted left + 2 addresses) -->
-                        <div class="col-lg-3 col-md-6 col-12" style="margin-left: 0px;">
-                            <div class="single-footer">
-                                <h2>Our Location</h2>
-                                <p>11B - Raghavendra Road, Vanashakthi Nagar Extn, Puthagaram, Kolathur, Chennai - 600099</p>
-                                <p>248 - Sai Kudil Ground Floor, 8th Cross Street, Ashok Nagar, Thanjavur - 613005</p>
-                                <a href="https://maps.app.goo.gl/bypN6ir4dUjw3XCXA?g_st=com.google.maps.preview.copy" target="_blank" class="btn" style="background-color: rgb(189, 4, 4); 
-          color: white; padding: 10px 20px; border-radius: 5px; display: inline-flex; align-items: center; text-decoration: none; margin-top: 20px;">
-                                    <i class="icofont-location-pin" style="margin-right: 8px;"></i> Find Location
-                                </a>
-                            </div>
-                        </div>
-
+                        </ul>
+                        <!-- End Social Media -->
                     </div>
                 </div>
-            </div>
-            <!-- Footer Bottom -->
-            <div class="footer-bottom text-center">
-                <div class="container">
-                    <p>&copy; 2025 Runway Packers. All Rights Reserved. Designed by
-                        <a href="https://popappz.com/" target="_blank"
-                            style="color: green; text-decoration: none; font-weight: bold;">Pop Appz</a>.
-                    </p>
+
+                <!-- Quick Links -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="single-footer f-link">
+                        <h2>Quick Links</h2>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <ul>
+                                    <li><a href="index.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
+                                    <li><a href="about.html"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
+                                    <li><a href="services.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a></li>
+                                    <li><a href="contact.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Contact Us -->
+                <div class="col-lg-3 col-md-6 col-12" style="margin-left: 0px;">
+                    <div class="single-footer">
+                        <h2>Contact Us</h2>
+                        <p style="margin-left: -5px;">+91 91768 67827,<br>+91 9789989120</p>
+                        <p style="margin-left: -5px;"><a href="mailto:contact@popappz.com">popappz@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <!-- Our Location -->
+                <div class="col-lg-3 col-md-6 col-12" style="margin-left: 0px;">
+                    <div class="single-footer">
+                        <h2>Our Location</h2>
+                        <p>No.129, Shop No.130, Plaza <br>Center,GN Chetty Road,<br> T Nagar, Chennai-17</p>
+                        
+                        <a href="https://maps.app.goo.gl/4ZX9PYhZb8tYpSTVA" target="_blank" class="btn" style="background-color: rgb(189, 4, 4); 
+          color: white; padding: 10px 20px; border-radius: 5px; display: inline-flex; align-items: center; text-decoration: none; margin-top: 20px;">
+                            <i class="icofont-location-pin" style="margin-right: 8px;"></i> Find Location
+                        </a>
+                    </div>
+                </div>
+
             </div>
-            <!--/ End Footer Bottom -->
-        </footer>
+        </div>
+    </div>
+    <!-- Footer Bottom Removed -->
+</footer>
+
 
         <!-- Floating Contact Buttons -->
         <div class="floating-contact-buttons">
