@@ -244,7 +244,7 @@ body{
 	Start Header CSS 
 =====================*/
 .header{
-	background-color:#fff;
+	 background: linear-gradient(180deg, #dfffd8, #dfffd8);
 	position:relative;
 }
 .header .navbar-collapse{
@@ -299,7 +299,7 @@ body{
 	margin-right:8px;
 }
 .header .header-inner {
-	background:#fff;
+	 background: linear-gradient(180deg, #dfffd8, #dfffd8);
 	z-index:999;
 	width:100%;
 }

@@ -53,7 +53,7 @@
         .floating-contact-buttons {
             position: fixed;
             right: 20px;
-            top: 48%;
+            top: 44%;
             transform: translateY(-50%);
             z-index: 1000;
             display: flex;
@@ -76,12 +76,13 @@
         }
 
         .phone-btn {
-            background-color:  #5CAB23;
+            background-color: #5CAB23;
             color: white;
         }
 
         .phone-btn:hover {
-            background-color: #4f8a1e;;
+            background-color: #4f8a1e;
+            ;
             color: white;
             transform: scale(1.1);
             text-decoration: none;
@@ -89,12 +90,12 @@
 
         .whatsapp-btn {
             background-color: white;
-            color:  #5CAB23;
-            border: 2px solid  #5CAB23;
+            color: #5CAB23;
+            border: 2px solid #5CAB23;
         }
 
         .whatsapp-btn:hover {
-            background-color:  #5CAB23;
+            background-color: #5CAB23;
             color: white;
             transform: scale(1.1);
             text-decoration: none;
@@ -104,9 +105,11 @@
             0% {
                 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             }
+
             50% {
                 box-shadow: 0 4px 20px rgba(23, 86, 155, 0.4);
             }
+
             100% {
                 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             }
@@ -152,656 +155,1077 @@
 
     <!-- Preloader -->
     <!-- Preloader Section -->
-<div class="preloader">
-    <div class="loader">
-        <img src="img/k1.jpg" alt="Loading..." class="preloader-image">
+    <div class="preloader">
+        <div class="loader">
+            <img src="img/k1.jpg" alt="Loading..." class="preloader-image">
+        </div>
     </div>
-</div>
 
-<style>
-    /* Preloader styles */
-    .preloader {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #fff; /* or semi-transparent */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 9999;
-        transition: opacity 0.5s ease, visibility 0.5s ease;
-    }
+    <style>
+        /* Preloader styles */
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            /* or semi-transparent */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
 
-    /* Fade out effect when loading finishes */
-    .preloader.fade-out {
-        opacity: 0;
-        visibility: hidden;
-    }
+        /* Fade out effect when loading finishes */
+        .preloader.fade-out {
+            opacity: 0;
+            visibility: hidden;
+        }
 
-    .preloader-image {
-        width: 100px; /* adjust size */
-        height: 100px;
-        border-radius: 10%; /* makes the image circular */
-        object-fit: cover; /* ensures the image fits nicely in the circle */
-    }
-</style>
+        .preloader-image {
+            width: 100px;
+            /* adjust size */
+            height: 100px;
+            border-radius: 10%;
+            /* makes the image circular */
+            object-fit: cover;
+            /* ensures the image fits nicely in the circle */
+        }
+    </style>
 
-<script>
-    // Hide preloader after page loads
-    window.addEventListener("load", function() {
-        const preloader = document.querySelector(".preloader");
-        preloader.classList.add("fade-out");
-    });
-</script>
+    <script>
+        // Hide preloader after page loads
+        window.addEventListener("load", function () {
+            const preloader = document.querySelector(".preloader");
+            preloader.classList.add("fade-out");
+        });
+    </script>
 
     <!-- End Preloader -->
     <!-- Header Area -->
     <header class="header">
         <!-- Topbar -->
-        <div class="topbar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-5 col-12">
-                        <!-- Contact -->
-                        <ul class="top-link">
-                            
-                        </ul>
-                        <!-- End Contact -->
-                    </div>
-                    <div class="col-lg-6 col-md-7 col-12">
-                        <!-- Top Contact -->
-                        <ul class="top-contact">
-                            <li><i class="fa fa-phone orange"></i>+91 8925477787</li>
-                            <li><i class="fa fa-envelope"></i><a
-                                    href="popappz@gmail.com">popappz@gmail.com</a></li>
-                        </ul>
-                        <!-- End Top Contact -->
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <!-- End Topbar -->
         <header>
-    <!-- Header Inner -->
-    <div class="header-inner">
-        <div class="container">
-            <div class="inner">
-                <div class="row align-items-center">
-                    <div class="col-lg-3 col-md-3 col-12">
-                        <!-- Start Logo -->
-                        <div class="logo">
-                            <a href="index.html"><img src="img/logo1.png" style="height: 100px;width: auto;" alt="PopAppz"></a>
+            <!-- Header Inner -->
+            <div class="header-inner">
+                <div class="container">
+                    <div class="inner">
+                        <div class="row align-items-center">
+                            <div class="col-lg-3 col-md-3 col-12">
+                                <!-- Start Logo -->
+                                <div class="logo">
+                                    <a href="index.html"><img src="img/logo1.png" style="height: 100px;width: auto;"
+                                            alt="PopAppz"></a>
+                                </div>
+                                <!-- End Logo -->
+                                <!-- Mobile Nav -->
+                                <div class="mobile-nav"></div>
+                                <!-- End Mobile Nav -->
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-12">
+                                <!-- Main Menu -->
+                                <div class="main-menu">
+                                    <nav class="navigation">
+                                        <ul class="nav menu d-flex align-items-center justify-content-end">
+                                            <li class="active"><a href="index.html">Home</a></li>
+                                            <li><a href="">About Us</a></li>
+                                            <li><a href="">Services</a></li>
+                                            <li><a href="">Gallery</a></li>
+                                            <li><a href="">Clients</a></li>
+                                            <li>
+                                                <a href="" class="btn"
+                                                    style="background-color: #5CAB23; color: #fff; font-weight: 600; padding: 8px 20px; border-radius: 5px; margin-left: 15px;">
+                                                    Contact Us
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <!--/ End Main Menu -->
+                            </div>
                         </div>
-                        <!-- End Logo -->
-                        <!-- Mobile Nav -->
-                        <div class="mobile-nav"></div>
-                        <!-- End Mobile Nav -->
-                    </div>
-                    <div class="col-lg-9 col-md-9 col-12">
-                        <!-- Main Menu -->
-                        <div class="main-menu">
-                            <nav class="navigation">
-                                <ul class="nav menu d-flex align-items-center justify-content-end">
-                                    <li class="active"><a href="index.html">Home</a></li>
-                                    <li><a href="">About Us</a></li>
-                                    <li><a href="">Services</a></li>
-                                    <li><a href="">Gallery</a></li>
-                                    <li><a href="">Clients</a></li>
-                                    <li>
-                                        <a href="" class="btn"
-                                           style="background-color: #5CAB23; color: #fff; font-weight: 600; padding: 8px 20px; border-radius: 5px; margin-left: 15px;">
-                                           Contact Us
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <!--/ End Main Menu -->
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!--/ End Header Inner -->
-</header>
+            <!--/ End Header Inner -->
+        </header>
 
 
         <!-- Slider Area -->
-        <section class="slider" style="padding-top: 10px;">
-    <div class="hero-slider">
+        <section class="slider" style="padding-top: 10px;margin-bottom: 60px;">
+            <div class="hero-slider">
 
-        <!-- Start Single Slider -->
-        <div class="single-slider">
-            <video autoplay muted loop playsinline class="background-video">
-                <source src="img/home-section-bg.mp4" type="video/mp4">
-            </video>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7">
-                        <div class="text">
-                            <h1 style="line-height: 1.6cm;">Your <span>Vision,</span> <br>Our <span>Innovation</span></h1>
-                            <p style="font-weight: 600; font-size: 20px;">
-    Innovating Tomorrow's Solutions, Today.
-</p>
+                <!-- Start Single Slider -->
+                <div class="single-slider">
+                    <video autoplay muted loop playsinline class="background-video">
+                        <source src="img/home-section-bg.mp4" type="video/mp4">
+                    </video>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <div class="text">
+                                    <h1 style="line-height: 1.6cm;">Your <span>Vision,</span> <br>Our
+                                        <span>Innovation</span></h1>
+                                    <p style="font-weight: 600; font-size: 20px;">
+                                        Innovating Tomorrow's Solutions, Today.
+                                    </p>
 
-                            <div class="button">
-                                <a href="" class="btn">24/7 Support</a>
-                                <a href="" class="btn primary">Our Services</a>
+                                    <div class="button">
+                                        <a href="" class="btn">24/7 Support</a>
+                                        <a href="" class="btn primary">Our Services</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- End Single Slider -->
+                <!-- End Single Slider -->
 
-        <!-- Start Single Slider -->
-        
-        <!-- End Single Slider -->
+                <!-- Start Single Slider -->
 
-        <!-- Start Single Slider -->
-        <div class="single-slider">
-            <video autoplay muted loop playsinline class="background-video">
-                <source src="img/home-section-bg.mp4" type="video/mp4">
-            </video>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7">
-                        <div class="text">
-                            <h1 style="line-height: 1.6cm;">Your <span>Vision,</span> <br>Our <span>Innovation</span></h1>
-                            <p style="font-weight: 600; font-size: 20px;">
-    Innovating Tomorrow's Solutions, Today.
-</p>
+                <!-- End Single Slider -->
 
-                            <div class="button">
-                                <a href="contact.html" class="btn">24/7 Support</a>
-                                <a href="service.html" class="btn primary">Explore Services</a>
+                <!-- Start Single Slider -->
+                <div class="single-slider">
+                    <video autoplay muted loop playsinline class="background-video">
+                        <source src="img/home-section-bg.mp4" type="video/mp4">
+                    </video>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <div class="text">
+                                    <h1 style="line-height: 1.6cm;">Your <span>Vision,</span> <br>Our
+                                        <span>Innovation</span></h1>
+                                    <p style="font-weight: 600; font-size: 20px;">
+                                        Innovating Tomorrow's Solutions, Today.
+                                    </p>
+
+                                    <div class="button">
+                                        <a href="contact.html" class="btn">24/7 Support</a>
+                                        <a href="service.html" class="btn primary">Explore Services</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- End Single Slider -->
+
             </div>
-        </div>
-        <!-- End Single Slider -->
+        </section>
+        <style>
+            .single-slider {
+                position: relative;
+                height: 100vh;
+                /* full screen */
+                overflow: hidden;
+            }
 
-    </div>
-</section>
-<style>
-    .single-slider {
-    position: relative;
-    height: 100vh; /* full screen */
-    overflow: hidden;
-}
-
-.background-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* fill the section */
-    z-index: -1; /* keep video behind content */
-}
-
-</style>
+            .background-video {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                /* fill the section */
+                z-index: -1;
+                /* keep video behind content */
+            }
+        </style>
         <!--/ End Slider Area -->
 
-        <section class="schedule" style="padding-top: 60px;">
-    <div class="container">
-        <!-- Intro Text -->
-        <div class="section-title text-center mb-5">
-            <h2>What We Offer</h2>
-            <h4>Innovative Solutions for Your Business</h4>
-            <p>Reliable, modern, and efficient digital services to help your business grow online.</p>
+        <!-- Inserted Image-1 styled "Why Choose Us?" section to occupy the empty space after the slider -->
+        <section id="why-choose-us" class="why-choose-hero" aria-labelledby="why-choose-us-title">
+  <div class="image-side" aria-hidden="true"></div> <!-- Left half image -->
+  <div class="content-side">
+    <div class="why-card">
+      <h2 id="why-choose-us-title">Why Choose Us?</h2>
+      <hr class="why-divider" />
+      <div class="why-items">
+        <div class="why-item">
+          <h4>Expert Team</h4>
+          <p>Our team of experienced developers, designers, and marketers are dedicated to delivering exceptional results.</p>
         </div>
-
-        <div class="schedule-inner">
-
-            <!-- First Row -->
-            <div class="row mb-4">
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="single-schedule first">
-                        <div class="inner">
-                            <div class="icon">
-                                <i class="fa fa-laptop-code"></i>
-                            </div>
-                            <div class="single-content">
-                                <span>Web & Mobile</span>
-                                <h4>Web App Development</h4>
-                                <p>We build responsive and scalable web applications tailored to your business needs.</p>
-                                <a href="">LEARN MORE <i class="fa fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="single-schedule middle">
-                        <div class="inner">
-                            <div class="icon">
-                                <i class="fa fa-mobile-alt"></i>
-                            </div>
-                            <div class="single-content">
-                                <span>Mobile Solutions</span>
-                                <h4>Mobile App Development</h4>
-                                <p>Create engaging and high-performance mobile apps for iOS and Android platforms.</p>
-                                <a href="">LEARN MORE <i class="fa fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="single-schedule last">
-                        <div class="inner">
-                            <div class="icon">
-                                <i class="fa fa-cloud"></i>
-                            </div>
-                            <div class="single-content">
-                                <span>Cloud</span>
-                                <h4>Cloud Managed Services</h4>
-                                <p>Reliable cloud solutions and management services to ensure secure and scalable operations.</p>
-                                <a href="">LEARN MORE <i class="fa fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Second Row -->
-            <div class="row mb-4">
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="single-schedule last">
-                        <div class="inner">
-                            <div class="icon">
-                                <i class="fa fa-robot"></i>
-                            </div>
-                            <div class="single-content">
-                                <span>AI & Consulting</span>
-                                <h4>AI Business Process And Consultation</h4>
-                                <p>Leverage AI and expert consultation to automate and optimize your business processes.</p>
-                                <a href="">LEARN MORE <i class="fa fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="single-schedule last">
-                        <div class="inner">
-                            <div class="icon">
-                                <i class="fa fa-search"></i>
-                            </div>
-                            <div class="single-content">
-                                <span>Search</span>
-                                <h4>SEO (Search Engine Optimization)</h4>
-                                <p>Improve your website ranking on search engines and drive organic traffic efficiently.</p>
-                                <a href="">LEARN MORE <i class="fa fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="single-schedule last">
-                        <div class="inner">
-                            <div class="icon">
-                                <i class="fa fa-sync-alt"></i>
-                            </div>
-                            <div class="single-content">
-                                <span>Digital</span>
-                                <h4>Digital Transformation Services</h4>
-                                <p>Modernize your business processes using technology to improve efficiency and growth.</p>
-                                <a href="">LEARN MORE <i class="fa fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-<div class="text-center mt-4">
-                <a href="" class="btn" style="background: #5CAB23; color:#fff; font-weight:500; padding:12px 30px; border-radius:5px;">
-                    VIEW MORE
-                </a>
-            </div>
+        <div class="why-item">
+          <h4>Custom Solutions</h4>
+          <p>We understand that every business is unique. We provide tailored solutions that align with your specific goals and requirements.</p>
         </div>
-    </div>
-</section>
-
-        <!-- Start Features -->
-        <section class="features section" style="padding-top: 700px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-title text-center mb-5">
-                    <h2>Our Gallery</h2>
-                    <p>Showcasing our projects, services, and internship opportunities for aspiring professionals.</p>
-                </div>
-            </div>
+        <div class="why-item">
+          <h4>Results-Driven Approach</h4>
+          <p>We focus on delivering measurable results and providing a strong return on your investment.</p>
         </div>
-
-        <div class="gallery-wrapper">
-    <div class="gallery-scroll" id="autoGallery">
-
-        <!-- 30 Gallery Images -->
-        <div class="gallery-item"><img src="gallery/G1.jpg" alt="Gallery 1" /></div>
-        <div class="gallery-item"><img src="gallery/G2.jpg" alt="Gallery 2" /></div>
-        <div class="gallery-item"><img src="gallery/G3.jpg" alt="Gallery 3" /></div>
-        <div class="gallery-item"><img src="gallery/image1.JPG" alt="Gallery 4" /></div>
-        <div class="gallery-item"><img src="gallery/image3.png" alt="Gallery 5" /></div>
-        <div class="gallery-item"><img src="gallery/G4.jpg" alt="Gallery 6" /></div>
-        <div class="gallery-item"><img src="gallery/G5.jpg" alt="Gallery 7" /></div>
-        <div class="gallery-item"><img src="gallery/G6.jpg" alt="Gallery 8" /></div>
-        <div class="gallery-item"><img src="gallery/G7.jpg" alt="Gallery 9" /></div>
-        <div class="gallery-item"><img src="gallery/G8.jpg" alt="Gallery 10" /></div>
-        <div class="gallery-item"><img src="gallery/G9.jpg" alt="Gallery 11" /></div>
-        <div class="gallery-item"><img src="gallery/G10.jpg" alt="Gallery 12" /></div>
-        <div class="gallery-item"><img src="gallery/G11.jpg" alt="Gallery 13" /></div>
-        <div class="gallery-item"><img src="gallery/G12.jpg" alt="Gallery 14" /></div>
-        <div class="gallery-item"><img src="gallery/G13.jpg" alt="Gallery 15" /></div>
-        <div class="gallery-item"><img src="gallery/G14.jpg" alt="Gallery 16" /></div>
-        <div class="gallery-item"><img src="gallery/G15.jpg" alt="Gallery 17" /></div>
-        <div class="gallery-item"><img src="gallery/G16.jpg" alt="Gallery 18" /></div>
-        <div class="gallery-item"><img src="gallery/G17.jpg" alt="Gallery 19" /></div>
-        <div class="gallery-item"><img src="gallery/G18.jpg" alt="Gallery 20" /></div>
-        <div class="gallery-item"><img src="gallery/G19.jpg" alt="Gallery 21" /></div>
-        <div class="gallery-item"><img src="gallery/G20.jpg" alt="Gallery 22" /></div>
-        <div class="gallery-item"><img src="gallery/G21.jpg" alt="Gallery 23" /></div>
-        <div class="gallery-item"><img src="gallery/G22.jpg" alt="Gallery 24" /></div>
-        <div class="gallery-item"><img src="gallery/G23.jpg" alt="Gallery 25" /></div>
-        <div class="gallery-item"><img src="gallery/G24.jpg" alt="Gallery 26" /></div>
-        <div class="gallery-item"><img src="gallery/image6.jpeg" alt="Gallery 27" /></div>
-        <div class="gallery-item"><img src="gallery/G26.jpg" alt="Gallery 28" /></div>
-        <div class="gallery-item"><img src="gallery/G25.jpg" alt="Gallery 29" /></div>
-        <div class="gallery-item"><img src="gallery/G27.jpg" alt="Gallery 30" /></div>
-
-        <!-- Duplicate for seamless loop -->
-        <div class="gallery-item"><img src="img/gallery1.jpg" alt="Gallery 1" /></div>
-        <div class="gallery-item"><img src="img/gallery2.jpg" alt="Gallery 2" /></div>
-        <!-- ...you can duplicate a few as needed -->
-    </div>
-</div>
-
-    </div>
-</section>
-
-<style>
-.gallery-wrapper {
-    overflow: hidden; /* hide scrollbar */
-    position: relative;
-    padding: 10px 0;
-}
-
-.gallery-scroll {
-    display: flex;
-    gap: 20px;
-    animation: scrollGallery 90s linear infinite; /* auto scroll */
-}
-
-.gallery-item {
-    min-width: 300px;
-    flex: 0 0 auto;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    display: inline-block;
-}
-
-/* Keyframes for auto-scrolling */
-@keyframes scrollGallery {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-780%); } /* move half of total width */
-}
-</style>
-
-
-        <!--/ End Features -->
-
-        <!-- Start Fun-facts -->
-        <div id="fun-facts" class="fun-facts section overlay"
-     style="position: relative; background: url('img/counter.jpg') no-repeat center center/cover;">
-    <!-- Overlay -->
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(121, 177, 48, 0.6);">
-    </div>
-
-    <div class="container" style="position: relative; z-index: 1;">
-        <div class="row text-center">
-
-            <!-- Projects Completed -->
-            <div class="col-lg-3 col-md-6 col-12">
-                <div class="single-fun">
-                    <i class="icofont icofont-check-circled"></i>
-                    <div class="content">
-                        <span class="counter">69</span>
-                        <p>Projects Completed</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Happy Customers -->
-            <div class="col-lg-3 col-md-6 col-12">
-    <div class="single-fun">
-        <i class="icofont-shield"></i> <!-- Changed icon -->
-        <div class="content">
-            <span class="counter">25</span>
-            <p>Happy Customers</p>
+        <div class="why-item">
+          <h4>Sustainable Development Goals</h4>
+          <p>Our business aligns with the SDGs to attract customers, investors, and employees who prioritize sustainability and social responsibility.</p>
         </div>
-    </div>
-</div>
-
-
-            <!-- Increased Customer Satisfaction -->
-            <div class="col-lg-3 col-md-6 col-12">
-                <div class="single-fun">
-                    <i class="icofont icofont-thumbs-up"></i>
-                    <div class="content">
-                        <span class="counter">97</span>
-                        <p>Customer Satisfaction (%)</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Years of Experience -->
-            <div class="col-lg-3 col-md-6 col-12">
-                <div class="single-fun">
-                    <i class="icofont icofont-clock-time"></i>
-                    <div class="content">
-                        <span class="counter">3</span>
-                        <p>Years of Experience</p>
-                    </div>
-                </div>
-            </div>
-
+        <div class="why-item">
+          <h4>Agile & Customer-Focused</h4>
+          <p>Our team is dedicated to providing exceptional software solutions and customer service, working closely with clients to achieve their goals.</p>
         </div>
-    </div>
-</div>
-
-        <!--/ End Fun-facts -->
-
-        <!-- Start Why Choose Us -->
-        <section class="why-choose section"
-    style="position: relative; background: url('img/software-bg.jpg') no-repeat center center/cover;">
-    <div
-        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.9);">
-    </div>
-    <div class="container" style="position: relative; z-index: 1;">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-title text-center">
-                    <h2>Find Out More About Us</h2>
-                    <p>Empowering Innovation, Inspiring Success</p>
-                </div>
-            </div>
+        <div class="why-item">
+          <h4>Management & Communication</h4>
+          <p>We ensure smooth execution and personalized attention for every project, big or small.</p>
         </div>
-        <div class="row align-items-center">
-            <div class="col-lg-6 col-12">
-                <!-- Start Choose Left -->
-                <div class="choose-left">
-                    <h3>About Us</h3>
-                    <p>We are passionate about transforming ideas into innovative digital solutions. Specializing in mobile app development for Android & iOS, website design, and comprehensive software solutions, we provide cutting-edge technology tailored to our clients’ needs.</p>
-                    <p>Our internship programs empower young minds with hands-on experience, mentorship, and certification, preparing the next generation of tech leaders. We foster creativity, innovation, and entrepreneurial thinking to turn ideas into impactful solutions.</p>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <ul class="list">
-                                <li><i class="fa fa-caret-right"></i> Mobile & Web App Development</li>
-                                <li><i class="fa fa-caret-right"></i> Innovative Software Solutions</li>
-                                <li><i class="fa fa-caret-right"></i> Comprehensive Internship Programs</li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-6">
-                            <ul class="list">
-                                <li><i class="fa fa-caret-right"></i> Cutting-edge Technology</li>
-                                <li><i class="fa fa-caret-right"></i> Mentorship & Skill Development</li>
-                                <li><i class="fa fa-caret-right"></i> Creative & Entrepreneurial Environment</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Choose Left -->
-            </div>
-            <div class="col-lg-6 col-12">
-                <img src="img/about.png" alt="Our Software Solutions"
-                    style="width: 100%; height: auto; object-fit: cover;">
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="partners section" style="padding-top: 0px;">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="section-title text-center mb-5">
-          <h2>We Are Working With</h2>
-          <p>Highlighting our strategic tie-ups, collaborative projects, and innovative software solutions delivered with our partners.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="partners-wrapper">
-      <div class="partners-scroll">
-        <!-- Original 19 logos -->
-<div class="partner-item">
-    <a href="https://play.google.com/store/apps/details?id=com.gromartappuser" target="_blank">
-        <img src="img/GrowMart.JPEG" alt="GrowMart" />
-    </a>
-</div>
-        <div class="partner-item"><img src="img/Aduppankarai.jpg" alt="Aduppankarai" /></div>
-        <div class="partner-item"><img src="img/Agri Connect.png" alt="Agri Connect" /></div>
-        <div class="partner-item"><img src="img/Alize Software Services and Publishers.webp" alt="Alize Software" /></div>
-        <div class="partner-item"><img src="img/Decode Logo.png" alt="Decode Logo" /></div>
-<div class="partner-item">
-    <a href="https://play.google.com/store/apps/details?id=com.royalKaveryapp" target="_blank">
-        <img src="img/Royal Cavery.JPG" alt="Royal Cavery" />
-    </a>
-</div>
-        <div class="partner-item"><img src="img/iconic global.png" alt="Iconic Global" /></div>
-        <div class="partner-item"><img src="img/Inspa.jpg" alt="Inspa" /></div>
-        <div class="partner-item"><img src="img/dairy.PNG" alt="Dairy Products" /></div>
-<div class="partner-item">
-    <a href="https://kalaivanielectricals.com" target="_blank">
-        <img src="img/Kalaivani Electricals.png" alt="Kalaivani Electricals" />
-    </a>
-</div>
-        <div class="partner-item"><img src="img/logo-mytech.png" alt="logo-mytech" /></div>
-        <div class="partner-item"><img src="img/MN Industries.jpg" alt="MN Industries" /></div>
-        <div class="partner-item"><img src="img/NDA Technology.png" alt="NDA Technology" /></div>
-<div class="partner-item">
-    <a href="https://mohitaforwarders.com" target="_blank">
-        <img src="img/Mohita.png" alt="Mohita" />
-    </a>
-</div>
-        <div class="partner-item"><img src="img/Sairam Institutions.png" alt="Sairam Institutions" /></div>
-        <div class="partner-item"><img src="img/Sairam Techno Incubator.webp" alt="Sairam Techno Incubator" /></div>
-        <div class="partner-item"><img src="img/Tamil Business World.jpg" alt="Tamil Business World" /></div>
-        <div class="partner-item"><img src="img/The Pentagreen.png" alt="The Pentagreen" /></div>
-        <div class="partner-item"><img src="img/Vaarthai Viyaabari.jpg" alt="Vaarthai Viyaabari" /></div>
-
-        <!-- Duplicate all 19 logos for seamless loop -->
-<div class="partner-item">
-    <a href="https://play.google.com/store/apps/details?id=com.gromartappuser" target="_blank">
-        <img src="img/GrowMart.JPEG" alt="GrowMart" />
-    </a>
-</div>
-        <div class="partner-item"><img src="img/Aduppankarai.jpg" alt="Aduppankarai" /></div>
-        <div class="partner-item"><img src="img/Agri Connect.png" alt="Agri Connect" /></div>
-        <div class="partner-item"><img src="img/Alize Software Services and Publishers.webp" alt="Alize Software" /></div>
-        <div class="partner-item"><img src="img/Decode Logo.png" alt="Decode Logo" /></div>
-<div class="partner-item">
-    <a href="https://play.google.com/store/apps/details?id=com.royalKaveryapp" target="_blank">
-        <img src="img/Royal Cavery.JPG" alt="Royal Cavery" />
-    </a>
-</div>
-        <div class="partner-item"><img src="img/iconic global.png" alt="Iconic Global" /></div>
-        <div class="partner-item"><img src="img/Inspa.jpg" alt="Inspa" /></div>
-        <div class="partner-item"><img src="img/dairy.PNG" alt="Dairy Products" /></div>
-<div class="partner-item">
-    <a href="https://kalaivanielectricals.com" target="_blank">
-        <img src="img/Kalaivani Electricals.png" alt="Kalaivani Electricals" />
-    </a>
-</div>        <div class="partner-item"><img src="img/logo-mytech.png" alt="logo-mytech" /></div>
-        <div class="partner-item"><img src="img/MN Industries.jpg" alt="MN Industries" /></div>
-        <div class="partner-item"><img src="img/NDA Technology.png" alt="NDA Technology" /></div>
-<div class="partner-item">
-    <a href="https://mohitaforwarders.com" target="_blank">
-        <img src="img/Mohita.png" alt="Mohita" />
-    </a>
-</div>        <div class="partner-item"><img src="img/Sairam Institutions.png" alt="Sairam Institutions" /></div>
-        <div class="partner-item"><img src="img/Sairam Techno Incubator.webp" alt="Sairam Techno Incubator" /></div>
-        <div class="partner-item"><img src="img/Tamil Business World.jpg" alt="Tamil Business World" /></div>
-        <div class="partner-item"><img src="img/The Pentagreen.png" alt="The Pentagreen" /></div>
-        <div class="partner-item"><img src="img/Vaarthai Viyaabari.jpg" alt="Vaarthai Viyaabari" /></div>
       </div>
     </div>
   </div>
 </section>
 
 <style>
-.partners-wrapper {
-  overflow: hidden;
-  padding: 10px 0;
-}
+  *, *::before, *::after { box-sizing: border-box; }
 
-.partners-scroll {
-  display: flex;
-  gap: 40px;
-  flex-wrap: nowrap;
-  animation: scrollPartners 50s linear infinite; /* adjust speed */
-}
+  /* Main section */
+  .why-choose-hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(180deg, #dfffd8, #dfffd8);
+    padding: 5%; /* 🔹 Padding added equally on all sides */
+  }
 
-.partner-item {
-  min-width: 180px;
-  flex: 0 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #fff;
-  padding: 15px;
-  border-radius: 12px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
-}
+  /* Left Half - Image */
+  .image-side {
+    position: absolute;
+    top: 10%; /* respect top padding */
+    left: 10%; /* respect left padding */
+    bottom: 0%; /* respect bottom padding */
+    width: 50%; /* image width */
+    background: url('img/12.jpg') no-repeat center center / cover;
+    z-index: 1;
+    border-radius: 8px;
+  }
 
-.partner-item img {
-  max-width: 100%;
-  max-height: 80px;
-  object-fit: contain;
-  display: block;
-}
+  /* Right Half - Mid-right aligned content */
+  .content-side {
+    position: absolute;
+    right: 10%; /* respect right padding */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
 
-/* Animate full scroll of duplicated set */
-@keyframes scrollPartners {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-420%); } /* move full width of first 19 logos */
-}
+  /* Black card */
+  .why-card {
+    background: #5CAB23;
+    color: #dcdcdc;
+    border-radius: 10px;
+    padding: 30px 40px;
+    width: 100%;
+    box-shadow: 0 10px 30px #5CAB23;
+  }
+
+  /* Text Styles */
+  .why-card h2 {
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: left;
+    margin: 0 0 10px 0;
+    font-size: 24px;
+  }
+
+  .why-divider {
+    border: 0;
+    height: 2px;
+    background: white;
+    width: 60px;
+    margin: 0 0 20px 0;
+    display: block;
+  }
+
+  .why-items { margin-top: 6px; }
+  .why-item { margin-top: 16px; }
+  .why-item h4 {
+    color: #ffffff;
+    margin: 0 0 6px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .why-item p {
+    color: white;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* Responsive (mobile view) */
+  @media (max-width: 991px) {
+    .why-choose-hero {
+      padding: 8%;
+    }
+
+    .image-side {
+      position: relative;
+      width: 100%;
+      height: 320px;
+      top: 0;
+      left: 0;
+      bottom: auto;
+      border-radius: 10px;
+    }
+
+    .content-side {
+      position: relative;
+      width: 100%;
+      top: auto;
+      transform: none;
+      right: 0;
+      margin-top: -60px;
+      justify-content: center;
+      padding: 0;
+    }
+
+    .why-card {
+      width: 95%;
+      padding: 22px 18px;
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.45);
+    }
+
+    .why-card h2 { font-size: 20px; }
+    .why-item h4 { font-size: 16px; }
+  }
+
+  @media (max-width: 520px) {
+    .why-choose-hero { padding: 6%; }
+    .why-card { padding: 18px; }
+  }
 </style>
+
+
+
+
+        <!-- End Why Choose Us insertion -->
+
+
+        <section class="services section" style="margin-bottom: 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center">
+                            <h2>Our Trusted Process for Building User-Friendly Apps</h2>
+                            <p>We combine strategy, design, and innovation to turn your vision into user-centered
+                                digital products with measurable impact.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROCESS TIMELINE -->
+                <div class="process-timeline">
+
+                    <!-- Top Row -->
+                    <div class="row justify-content-between gx-4 gy-5 align-items-start process-row process-row-top">
+                        <div class="col-md-4">
+                            <div class="process-item">
+                                <div class="step-no">01</div>
+                                <div class="step-circle step-pink">
+                                    <i class="icofont icofont-eye-alt"></i>
+                                </div>
+                                <h4 class="process-title">UX Driven Engineering</h4>
+                                <p class="process-text">Our UX-driven approach ensures designs are visually appealing,
+                                    intuitive, and user-friendly.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="process-item">
+                                <div class="step-no">02</div>
+                                <div class="step-circle step-lavender">
+                                    <i class="icofont icofont-network"></i>
+                                </div>
+                                <h4 class="process-title">Developing Shared Understanding</h4>
+                                <p class="process-text">Clear communication between teams and stakeholders translates
+                                    ideas into efficient solutions.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="process-item">
+                                <div class="step-no">03</div>
+                                <div class="step-circle step-amber">
+                                    <i class="icofont icofont-trophy-alt"></i>
+                                </div>
+                                <h4 class="process-title">Proven Experience &amp; Expertise</h4>
+                                <p class="process-text">Our team brings extensive experience to deliver exceptional
+                                    results that exceed client expectations.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="h-bridge top-3-vert"></div>
+                    <!-- L-shaped connector from Step 3 → Step 4 -->
+                    <div class="l-connector">
+                        <div class="l-horizontal"></div>
+                        <div class="l-vertical"></div>
+                        <div class="arrow-vertical">
+                            <svg viewBox="0 0 8 12" width="10" height="14">
+                                <path d="M1 1 L6 6 L1 11" stroke="#fff" stroke-width="1.8" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="h-bridge bottom-vert-4"></div>
+                    <!-- Bottom Row -->
+                    <div class="row justify-content-between gx-4 gy-5 align-items-start process-row process-row-bottom">
+                        <div class="col-md-4">
+                            <div class="process-item">
+                                <div class="step-no">06</div>
+                                <div class="step-circle step-mint">
+                                    <i class="icofont icofont-ui-check"></i>
+                                </div>
+                                <h4 class="process-title">Quality Assurance &amp; Testing</h4>
+                                <p class="process-text">Comprehensive QA and testing guarantee reliable, bug-free
+                                    software ready for deployment.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="process-item">
+                                <div class="step-no">05</div>
+                                <div class="step-circle step-grey">
+                                    <i class="icofont icofont-check-circled"></i>
+                                </div>
+                                <h4 class="process-title">Code Reviews</h4>
+                                <p class="process-text">Rigorous code reviews ensure clean, maintainable, and
+                                    high-quality code for every project.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="process-item">
+                                <div class="step-no">04</div>
+                                <div class="step-circle step-blue">
+                                    <i class="icofont icofont-lock"></i>
+                                </div>
+                                <h4 class="process-title">Security &amp; IP Protection</h4>
+                                <p class="process-text">We prioritize safeguarding your data and intellectual property
+                                    with robust security measures.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Horizontal connectors -->
+                    <div class="h-connector top conn-12"></div>
+                    <div class="h-connector top conn-23"></div>
+                    <div class="h-connector bottom conn-45"></div>
+                    <div class="h-connector bottom conn-56"></div>
+
+                    <!-- Horizontal arrows -->
+                    <div class="arrow-dot arrow-top-12">
+                        <svg viewBox="0 0 8 12" width="10" height="14">
+                            <path d="M1 1 L6 6 L1 11" stroke="#fff" stroke-width="1.8" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="arrow-dot arrow-top-23">
+                        <svg viewBox="0 0 8 12" width="10" height="14">
+                            <path d="M1 1 L6 6 L1 11" stroke="#fff" stroke-width="1.8" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="arrow-dot arrow-bottom-45">
+                        <svg viewBox="0 0 8 12" width="10" height="14">
+                            <path d="M1 1 L6 6 L1 11" stroke="#fff" stroke-width="1.8" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="arrow-dot arrow-bottom-56">
+                        <svg viewBox="0 0 8 12" width="10" height="14">
+                            <path d="M1 1 L6 6 L1 11" stroke="#fff" stroke-width="1.8" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+
+                </div> <!-- end process-timeline -->
+            </div>
+        </section>
+
+        <style>
+            /* ---------- timeline variables ---------- */
+            .process-timeline {
+                --top-line-y: 120px;
+                --bottom-line-y: 420px;
+                position: relative;
+                padding: 40px 0;
+                margin-top: 20px;
+            }
+
+            /* process items */
+            .process-item {
+                text-align: center;
+                max-width: 360px;
+                margin: 0 auto;
+            }
+
+            .step-no {
+                font-weight: 700;
+                color: #5CAB23;
+                font-size: 18px;
+                margin-bottom: 8px;
+            }
+
+            .step-circle {
+                width: 110px;
+                height: 110px;
+                margin: 0 auto 14px auto;
+                border-radius: 50%;
+                display: grid;
+                place-items: center;
+                box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08) inset, 0 6px 16px rgba(0, 0, 0, 0.06);
+                font-size: 40px;
+                color: #333;
+            }
+
+            .process-title {
+                font-weight: 700;
+                margin-bottom: 6px;
+            }
+
+            .process-text {
+                color: #555;
+            }
+
+            .step-pink {
+                background: #f9d1d1;
+            }
+
+            .step-lavender {
+                background: #ddd9fb;
+            }
+
+            .step-amber {
+                background: #fde9bd;
+            }
+
+            .step-blue {
+                background: #cfe6ff;
+            }
+
+            .step-grey {
+                background: #e5e5e7;
+            }
+
+            .step-mint {
+                background: #d6f0df;
+            }
+
+            /* ---------- horizontal connectors ---------- */
+            .h-connector {
+                position: absolute;
+                height: 0;
+                border-top: 2px dotted #111;
+                z-index: 0;
+            }
+
+            .h-connector.top {
+                top: var(--top-line-y);
+            }
+
+            .h-connector.bottom {
+                top: var(--bottom-line-y);
+            }
+
+            /* horizontal positions */
+            .conn-12 {
+                left: 22%;
+                width: 22%;
+            }
+
+            .conn-23 {
+                left: 56%;
+                width: 22%;
+            }
+
+            .conn-45 {
+                left: 56%;
+                width: 22%;
+            }
+
+            .conn-56 {
+                left: 22%;
+                width: 22%;
+            }
+
+            /* ---------- L-shaped connector ---------- */
+            .l-connector {
+                position: absolute;
+                top: var(--top-line-y);
+                left: 102%;
+                /* start at Step 3 center */
+                width: 50px;
+                height: calc(var(--bottom-line-y) - var(--top-line-y));
+                pointer-events: none;
+                z-index: 0;
+            }
+
+            .l-horizontal {
+                position: absolute;
+                top: 0;
+                left: 0px;
+                width: 0px;
+                height: 0;
+                border-top: 2px dotted #111;
+            }
+
+            .l-vertical {
+                position: absolute;
+                top: 0;
+                left: 50px;
+                width: 0;
+                height: 100%;
+                border-left: 2px dotted #111;
+            }
+
+            /* ---------- vertical arrow in middle of L-line ---------- */
+            .arrow-vertical {
+                position: absolute;
+                top: 50%;
+                left: 50px;
+                transform: translate(-50%, -50%) rotate(90deg);
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background: #111;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 3;
+            }
+
+            /* Horizontal bridges */
+            .h-bridge {
+                position: absolute;
+                height: 0;
+                border-top: 2px dotted #111;
+                z-index: 0;
+            }
+
+            /* Top bridge: Step 3 → vertical line */
+            .top-3-vert {
+                top: var(--top-line-y);
+                /* align with Step 3 horizontal */
+                left: 90%;
+                /* Step 3 middle */
+                width: 16.5%;
+                /* gap to vertical line at left:102% */
+            }
+
+            /* Bottom bridge: vertical line → Step 4 middle */
+            .bottom-vert-4 {
+                top: var(--bottom-line-y);
+                /* align with Step 4 horizontal */
+                left: 90%;
+                /* vertical connector fixed */
+                width: 16.5%;
+                /* gap to Step 4 middle (adjust as needed) */
+            }
+
+            /* ---------- horizontal arrows ---------- */
+            .arrow-dot {
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background: #111;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 3;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+            }
+
+            .arrow-top-12 {
+                top: calc(var(--top-line-y) - 16px);
+                left: 33.33%;
+                transform: translateX(-50%);
+            }
+
+            .arrow-top-23 {
+                top: calc(var(--top-line-y) - 16px);
+                left: 66.66%;
+                transform: translateX(-50%);
+            }
+
+            .arrow-bottom-45 {
+                top: calc(var(--bottom-line-y) - 16px);
+                left: 67%;
+                transform: translateX(-50%) rotate(180deg);
+            }
+
+            .arrow-bottom-56 {
+                top: calc(var(--bottom-line-y) - 16px);
+                left: 33.33%;
+                transform: translateX(-50%) rotate(180deg);
+            }
+
+            /* ---------- responsiveness ---------- */
+            @media (max-width: 1200px) {
+                .conn-12 {
+                    left: 17%;
+                    width: 25%;
+                }
+
+                .conn-23 {
+                    left: 53%;
+                    width: 27%;
+                }
+
+                .conn-45 {
+                    left: 40%;
+                    width: 27%;
+                }
+
+                .conn-56 {
+                    left: 8%;
+                    width: 28%;
+                }
+
+                .l-connector {
+                    left: 85%;
+                    width: 40px;
+                }
+            }
+
+            @media (max-width: 991px) {
+
+                .h-connector,
+                .l-connector,
+                .arrow-dot,
+                .arrow-vertical {
+                    display: none;
+                }
+            }
+        </style>
+        <!-- Start Features -->
+        <!-- Reduce extra padding so the new section occupies the previous empty space -->
+        <section class="features section" style="padding-top: 0px;margin-top: 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center mb-3">
+                            <h2>Our Gallery</h2>
+                            <p>Showcasing our projects, services, and internship opportunities for aspiring
+                                professionals.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-wrapper">
+                    <div class="gallery-scroll" id="autoGallery">
+
+                        <!-- 30 Gallery Images -->
+                        <div class="gallery-item"><img src="gallery/G1.jpg" alt="Gallery 1" /></div>
+                        <div class="gallery-item"><img src="gallery/G2.jpg" alt="Gallery 2" /></div>
+                        <div class="gallery-item"><img src="gallery/G3.jpg" alt="Gallery 3" /></div>
+                        <div class="gallery-item"><img src="gallery/image1.JPG" alt="Gallery 4" /></div>
+                        <div class="gallery-item"><img src="gallery/image3.png" alt="Gallery 5" /></div>
+                        <div class="gallery-item"><img src="gallery/G4.jpg" alt="Gallery 6" /></div>
+                        <div class="gallery-item"><img src="gallery/G5.jpg" alt="Gallery 7" /></div>
+                        <div class="gallery-item"><img src="gallery/G6.jpg" alt="Gallery 8" /></div>
+                        <div class="gallery-item"><img src="gallery/G7.jpg" alt="Gallery 9" /></div>
+                        <div class="gallery-item"><img src="gallery/G8.jpg" alt="Gallery 10" /></div>
+                        <div class="gallery-item"><img src="gallery/G9.jpg" alt="Gallery 11" /></div>
+                        <div class="gallery-item"><img src="gallery/G10.jpg" alt="Gallery 12" /></div>
+                        <div class="gallery-item"><img src="gallery/G11.jpg" alt="Gallery 13" /></div>
+                        <div class="gallery-item"><img src="gallery/G12.jpg" alt="Gallery 14" /></div>
+                        <div class="gallery-item"><img src="gallery/G13.jpg" alt="Gallery 15" /></div>
+                        <div class="gallery-item"><img src="gallery/G14.jpg" alt="Gallery 16" /></div>
+                        <div class="gallery-item"><img src="gallery/G15.jpg" alt="Gallery 17" /></div>
+                        <div class="gallery-item"><img src="gallery/G16.jpg" alt="Gallery 18" /></div>
+                        <div class="gallery-item"><img src="gallery/G17.jpg" alt="Gallery 19" /></div>
+                        <div class="gallery-item"><img src="gallery/G18.jpg" alt="Gallery 20" /></div>
+                        <div class="gallery-item"><img src="gallery/G19.jpg" alt="Gallery 21" /></div>
+                        <div class="gallery-item"><img src="gallery/G20.jpg" alt="Gallery 22" /></div>
+                        <div class="gallery-item"><img src="gallery/G21.jpg" alt="Gallery 23" /></div>
+                        <div class="gallery-item"><img src="gallery/G22.jpg" alt="Gallery 24" /></div>
+                        <div class="gallery-item"><img src="gallery/G23.jpg" alt="Gallery 25" /></div>
+                        <div class="gallery-item"><img src="gallery/G24.jpg" alt="Gallery 26" /></div>
+                        <div class="gallery-item"><img src="gallery/image6.jpeg" alt="Gallery 27" /></div>
+                        <div class="gallery-item"><img src="gallery/G26.jpg" alt="Gallery 28" /></div>
+                        <div class="gallery-item"><img src="gallery/G25.jpg" alt="Gallery 29" /></div>
+                        <div class="gallery-item"><img src="gallery/G27.jpg" alt="Gallery 30" /></div>
+
+                        <!-- Duplicate for seamless loop -->
+                        <div class="gallery-item"><img src="img/gallery1.jpg" alt="Gallery 1" /></div>
+                        <div class="gallery-item"><img src="img/gallery2.jpg" alt="Gallery 2" /></div>
+                        <!-- ...you can duplicate a few as needed -->
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <style>
+            .gallery-wrapper {
+                overflow: hidden;
+                /* hide scrollbar */
+                position: relative;
+                padding: 10px 0;
+            }
+
+            .gallery-scroll {
+                display: flex;
+                gap: 20px;
+                animation: scrollGallery 90s linear infinite;
+                /* auto scroll */
+            }
+
+            .gallery-item {
+                min-width: 300px;
+                flex: 0 0 auto;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+
+            .gallery-item img {
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+                display: inline-block;
+            }
+
+            /* Keyframes for auto-scrolling */
+            @keyframes scrollGallery {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-780%);
+                }
+
+                /* move half of total width */
+            }
+        </style>
+
+
+        <!--/ End Features -->
+
+        <!-- Start Fun-facts -->
+        <div id="fun-facts" class="fun-facts section overlay"
+            style="position: relative; background: url('img/counter.jpg') no-repeat center center/cover;">
+            <!-- Overlay -->
+            <div
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(121, 177, 48, 0.6);">
+            </div>
+
+            <div class="container" style="position: relative; z-index: 1;">
+                <div class="row text-center">
+
+                    <!-- Projects Completed -->
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="single-fun">
+                            <i class="icofont icofont-check-circled"></i>
+                            <div class="content">
+                                <span class="counter">69</span>
+                                <p>Projects Completed</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Happy Customers -->
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="single-fun">
+                            <i class="icofont-shield"></i> <!-- Changed icon -->
+                            <div class="content">
+                                <span class="counter">25</span>
+                                <p>Happy Customers</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Increased Customer Satisfaction -->
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="single-fun">
+                            <i class="icofont icofont-thumbs-up"></i>
+                            <div class="content">
+                                <span class="counter">97</span>
+                                <p>Customer Satisfaction (%)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Years of Experience -->
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="single-fun">
+                            <i class="icofont icofont-clock-time"></i>
+                            <div class="content">
+                                <span class="counter">3</span>
+                                <p>Years of Experience</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--/ End Fun-facts -->
+
+        <!-- Start Why Choose Us -->
+
+
+
+        <section class="partners section" style="padding-top: 60px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center mb-5">
+                            <h2>We Are Working With</h2>
+                            <p>Highlighting our strategic tie-ups, collaborative projects, and innovative software
+                                solutions delivered with our partners.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="partners-wrapper">
+                    <div class="partners-scroll">
+                        <!-- Original 19 logos -->
+                        <div class="partner-item">
+                            <a href="https://play.google.com/store/apps/details?id=com.gromartappuser" target="_blank">
+                                <img src="img/GrowMart.JPEG" alt="GrowMart" />
+                            </a>
+                        </div>
+                        <div class="partner-item"><img src="img/Aduppankarai.jpg" alt="Aduppankarai" /></div>
+                        <div class="partner-item"><img src="img/Agri Connect.png" alt="Agri Connect" /></div>
+                        <div class="partner-item"><img src="img/Alize Software Services and Publishers.webp"
+                                alt="Alize Software" /></div>
+                        <div class="partner-item"><img src="img/Decode Logo.png" alt="Decode Logo" /></div>
+                        <div class="partner-item">
+                            <a href="https://play.google.com/store/apps/details?id=com.royalKaveryapp" target="_blank">
+                                <img src="img/Royal Cavery.JPG" alt="Royal Cavery" />
+                            </a>
+                        </div>
+                        <div class="partner-item"><img src="img/iconic global.png" alt="Iconic Global" /></div>
+                        <div class="partner-item"><img src="img/Inspa.jpg" alt="Inspa" /></div>
+                        <div class="partner-item"><img src="img/dairy.PNG" alt="Dairy Products" /></div>
+                        <div class="partner-item">
+                            <a href="https://kalaivanielectricals.com" target="_blank">
+                                <img src="img/Kalaivani Electricals.png" alt="Kalaivani Electricals" />
+                            </a>
+                        </div>
+                        <div class="partner-item"><img src="img/logo-mytech.png" alt="logo-mytech" /></div>
+                        <div class="partner-item"><img src="img/MN Industries.jpg" alt="MN Industries" /></div>
+                        <div class="partner-item"><img src="img/NDA Technology.png" alt="NDA Technology" /></div>
+                        <div class="partner-item">
+                            <a href="https://mohitaforwarders.com" target="_blank">
+                                <img src="img/Mohita.png" alt="Mohita" />
+                            </a>
+                        </div>
+                        <div class="partner-item"><img src="img/Sairam Institutions.png" alt="Sairam Institutions" />
+                        </div>
+                        <div class="partner-item"><img src="img/Sairam Techno Incubator.webp"
+                                alt="Sairam Techno Incubator" /></div>
+                        <div class="partner-item"><img src="img/Tamil Business World.jpg" alt="Tamil Business World" />
+                        </div>
+                        <div class="partner-item"><img src="img/The Pentagreen.png" alt="The Pentagreen" /></div>
+                        <div class="partner-item"><img src="img/Vaarthai Viyaabari.jpg" alt="Vaarthai Viyaabari" />
+                        </div>
+
+                        <!-- Duplicate all 19 logos for seamless loop -->
+                        <div class="partner-item">
+                            <a href="https://play.google.com/store/apps/details?id=com.gromartappuser" target="_blank">
+                                <img src="img/GrowMart.JPEG" alt="GrowMart" />
+                            </a>
+                        </div>
+                        <div class="partner-item"><img src="img/Aduppankarai.jpg" alt="Aduppankarai" /></div>
+                        <div class="partner-item"><img src="img/Agri Connect.png" alt="Agri Connect" /></div>
+                        <div class="partner-item"><img src="img/Alize Software Services and Publishers.webp"
+                                alt="Alize Software" /></div>
+                        <div class="partner-item"><img src="img/Decode Logo.png" alt="Decode Logo" /></div>
+                        <div class="partner-item">
+                            <a href="https://play.google.com/store/apps/details?id=com.royalKaveryapp" target="_blank">
+                                <img src="img/Royal Cavery.JPG" alt="Royal Cavery" />
+                            </a>
+                        </div>
+                        <div class="partner-item"><img src="img/iconic global.png" alt="Iconic Global" /></div>
+                        <div class="partner-item"><img src="img/Inspa.jpg" alt="Inspa" /></div>
+                        <div class="partner-item"><img src="img/dairy.PNG" alt="Dairy Products" /></div>
+                        <div class="partner-item">
+                            <a href="https://kalaivanielectricals.com" target="_blank">
+                                <img src="img/Kalaivani Electricals.png" alt="Kalaivani Electricals" />
+                            </a>
+                        </div>
+                        <div class="partner-item"><img src="img/logo-mytech.png" alt="logo-mytech" /></div>
+                        <div class="partner-item"><img src="img/MN Industries.jpg" alt="MN Industries" /></div>
+                        <div class="partner-item"><img src="img/NDA Technology.png" alt="NDA Technology" /></div>
+                        <div class="partner-item">
+                            <a href="https://mohitaforwarders.com" target="_blank">
+                                <img src="img/Mohita.png" alt="Mohita" />
+                            </a>
+                        </div>
+                        <div class="partner-item"><img src="img/Sairam Institutions.png" alt="Sairam Institutions" />
+                        </div>
+                        <div class="partner-item"><img src="img/Sairam Techno Incubator.webp"
+                                alt="Sairam Techno Incubator" /></div>
+                        <div class="partner-item"><img src="img/Tamil Business World.jpg" alt="Tamil Business World" />
+                        </div>
+                        <div class="partner-item"><img src="img/The Pentagreen.png" alt="The Pentagreen" /></div>
+                        <div class="partner-item"><img src="img/Vaarthai Viyaabari.jpg" alt="Vaarthai Viyaabari" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <style>
+            .partners-wrapper {
+                overflow: hidden;
+                padding: 10px 0;
+            }
+
+            .partners-scroll {
+                display: flex;
+                gap: 40px;
+                flex-wrap: nowrap;
+                animation: scrollPartners 50s linear infinite;
+                /* adjust speed */
+            }
+
+            .partner-item {
+                min-width: 180px;
+                flex: 0 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #fff;
+                padding: 15px;
+                border-radius: 12px;
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+            }
+
+            .partner-item img {
+                max-width: 100%;
+                max-height: 80px;
+                object-fit: contain;
+                display: block;
+            }
+
+            /* Animate full scroll of duplicated set */
+            @keyframes scrollPartners {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-420%);
+                }
+
+                /* move full width of first 19 logos */
+            }
+        </style>
 
 
 
@@ -820,8 +1244,9 @@
                             <h2 style="margin-bottom: 20px;">Transform Your Ideas Into Cutting Edge Apps</h2>
                             <h5 style="color: #fff; margin-bottom: 20px;">Call Us Now: <a href="tel:+918925477787"
                                     style="color: #fff;">+91 8925477787</a></h5>
-                            <p style="margin-bottom: 30px;"> PopAppz helps businesses build innovative, user-friendly mobile and web apps that bring ideas to life.
-</p>
+                            <p style="margin-bottom: 30px;"> PopAppz helps businesses build innovative, user-friendly
+                                mobile and web apps that bring ideas to life.
+                            </p>
                             <div class="button mt-3">
                                 <a href="tel:+918925477787" class="btn"
                                     style="background-color:  #5CAB23; color: #fff; border: none; padding: 12px 30px;">Call
@@ -839,234 +1264,183 @@
         <!--/ End Call to Action -->
 
         <!-- Start Our Services -->
-        <section class="services section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-title text-center">
-                    <h2>Our Design & Development Approach</h2>
-                    <p>We combine UX-driven design, collaboration, and expert development to deliver exceptional software solutions.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
+        <!-- Start Our Services -->
 
-            <!-- UX Driven Engineering -->
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="single-service text-center">
-                    <i class="icofont icofont-eye-alt" style="font-size: 40px; color: #5CAB23;"></i>
-                    <h4>UX Driven Engineering</h4>
-                    <p>Our UX-driven approach ensures designs are visually appealing, intuitive, and user-friendly.</p>
-                </div>
-            </div>
 
-            <!-- Developing Shared Understanding -->
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="single-service text-center">
-                    <i class="icofont icofont-network" style="font-size: 40px; color: #5CAB23;font-weight: bold;"></i>
-                    <h4>Developing Shared Understanding</h4>
-                    <p>Clear communication between teams and stakeholders translates ideas into efficient solutions.</p>
-                </div>
-            </div>
 
-            <!-- Proven Experience and Expertise -->
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="single-service text-center">
-                    <i class="icofont icofont-trophy-alt" style="font-size: 40px; color: #5CAB23;"></i>
-                    <h4>Proven Experience & Expertise</h4>
-                    <p>Our team brings extensive experience to deliver exceptional results that exceed client expectations.</p>
-                </div>
-            </div>
 
-            <!-- Security & Intellectual Property -->
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="single-service text-center">
-                    <i class="icofont icofont-lock" style="font-size: 40px; color: #5CAB23;"></i>
-                    <h4>Security & IP Protection</h4>
-                    <p>We prioritize safeguarding your data and intellectual property with robust security measures.</p>
-                </div>
-            </div>
-
-            <!-- Code Reviews -->
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="single-service text-center">
-                    <i class="icofont icofont-check-circled" style="font-size: 40px; color: #5CAB23;"></i>
-                    <h4>Code Reviews</h4>
-                    <p>Rigorous code reviews ensure clean, maintainable, and high-quality code for every project.</p>
-                </div>
-            </div>
-
-            <!-- Quality Assurance & Testing -->
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="single-service text-center">
-                    <i class="icofont icofont-ui-check" style="font-size: 40px; color: #5CAB23;"></i>
-                    <h4>Quality Assurance & Testing</h4>
-                    <p>Comprehensive QA and testing guarantee reliable, bug-free software ready for deployment.</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
 
         <!--/ End Runway Packers Services -->
 
         <!-- Pricing Table -->
-        
+
 
         <!-- Start Booking -->
         <section class="booking section" style="background-color: #f9f9f9; padding: 60px 0;">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <div class="section-title mb-4">
-                    <h2>Book Your App Development Consultation</h2>
-                    <p>Schedule a session with PopAppz to discuss your mobile or web application ideas and get expert guidance.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row align-items-center">
-            <!-- Booking Description -->
-            <div class="col-lg-6 col-md-12 col-12">
-                <div class="booking-description">
-                    <p>
-                        PopAppz helps startups and businesses build innovative, scalable, and user-friendly mobile and web applications. 
-                        Connect with our experts to plan, design, and develop solutions tailored to your business needs.
-                    </p>
-                    <div class="form-group mt-4">
-                        <a href="" class="btn"
-                            style="background-color:  #5CAB23; color: #fff; padding: 12px 35px; border-radius: 5px; width: 350px;">
-                            Contact Us
-                        </a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="section-title mb-4">
+                            <h2>Consult with PopAppz for Your Development Needs</h2>
+                            <p>Schedule a session with PopAppz to discuss your mobile or web application ideas and get
+                                expert guidance.</p>
+                        </div>
                     </div>
-                    <p class="mt-3 text-muted" style="font-size: 14px;">
-                        Our team will get in touch to discuss your project requirements and provide expert assistance.
-                    </p>
                 </div>
-            </div>
+                <div class="row align-items-center">
+                    <!-- Booking Description -->
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <div class="booking-description">
+                            <p>
+                                PopAppz helps startups and businesses build innovative, scalable, and user-friendly
+                                mobile and web applications.
+                                Connect with our experts to plan, design, and develop solutions tailored to your
+                                business needs.
+                            </p>
+                            <div class="form-group mt-4">
+                                <a href="" class="btn"
+                                    style="background-color:  #5CAB23; color: #fff; padding: 12px 35px; border-radius: 5px; width: 350px;">
+                                    Contact Us
+                                </a>
+                            </div>
+                            <p class="mt-3 text-muted" style="font-size: 14px;">
+                                Our team will get in touch to discuss your project requirements and provide expert
+                                assistance.
+                            </p>
+                        </div>
+                    </div>
 
-            <!-- Booking Image -->
-            <div class="col-lg-6 col-md-12 col-12 text-center">
-                <div class="booking-image">
-                    <img src="img/booking.png" alt="PopAppz Consultation Illustration"
-                        style="width: 90%;height: auto; max-width: 350px;border-radius: 20px;">
+                    <!-- Booking Image -->
+                    <div class="col-lg-6 col-md-12 col-12 text-center">
+                        <div class="booking-image">
+                            <img src="img/booking.png" alt="PopAppz Consultation Illustration"
+                                style="width: 90%;height: auto; max-width: 350px;border-radius: 20px;">
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
         <!-- End Booking -->
 
         <!-- Start Newsletter Area -->
         <section class="newsletter section">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6 col-12">
-                <!-- Start Newsletter Text -->
-                <div class="subscribe-text">
-                    <h6 style="color:  #5CAB23; font-weight: 600;">Subscribe to PopAppz Updates</h6>
-                    <p>Get the latest insights on mobile & web app development, digital solutions, and exclusive PopAppz updates directly to your inbox.</p>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-12">
+                        <!-- Start Newsletter Text -->
+                        <div class="subscribe-text">
+                            <h6 style="color:  #5CAB23; font-weight: 600;">Subscribe to PopAppz Updates</h6>
+                            <p>Get the latest insights on mobile & web app development, digital solutions, and exclusive
+                                PopAppz updates directly to your inbox.</p>
+                        </div>
+                        <!-- End Newsletter Text -->
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <!-- Start Newsletter Form -->
+                        <div class="subscribe-form">
+                            <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner d-flex">
+                                <input name="EMAIL" type="email" placeholder="Enter your email"
+                                    class="common-input flex-grow-1" onfocus="this.placeholder = ''"
+                                    onblur="this.placeholder = 'Enter your email'" required>
+                                <button class="btn" style="background-color:  #5CAB23;">Subscribe</button>
+                            </form>
+                        </div>
+                        <!-- End Newsletter Form -->
+                    </div>
                 </div>
-                <!-- End Newsletter Text -->
             </div>
-            <div class="col-lg-6 col-12">
-                <!-- Start Newsletter Form -->
-                <div class="subscribe-form">
-                    <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner d-flex">
-                        <input name="EMAIL" type="email" placeholder="Enter your email"
-                            class="common-input flex-grow-1" onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = 'Enter your email'" required>
-                        <button class="btn" style="background-color:  #5CAB23;">Subscribe</button>
-                    </form>
-                </div>
-                <!-- End Newsletter Form -->
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
         <!-- /End Newsletter Area -->
 
         <!-- Footer Area -->
-       <footer id="footer" class="footer">
-    <!-- Footer Top -->
-    <div class="footer-top">
-        <div class="container">
-            <div class="row">
-                <!-- About Us -->
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="single-footer">
-                        <h2>About PopAppz</h2>
-                        <p>PopAppz delivers innovative mobile and web application solutions, helping businesses transform ideas into seamless digital experiences.</p>
-                        <!-- Social Media -->
-                        <ul class="social">
-                            <li><a href="#"><i class="icofont-facebook"></i></a></li>
-                            <li>
-        <a href="#">
-            <i class="icofont-twitter"></i>
-        </a>
-    </li>
-    <li>
-        <a href="https://www.instagram.com/pop_appz/" target="_blank">
-            <i class="icofont-instagram"></i>
-        </a>
-    </li>
-    <li>
-        <a href="https://www.linkedin.com/company/popappz-software-solutions-llp/?viewAsMember=true" target="_blank">
-            <i class="icofont-linkedin"></i>
-        </a>
-    </li>
+        <footer id="footer" class="footer">
+            <!-- Footer Top -->
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <!-- About Us -->
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="single-footer">
+                                <h2>About PopAppz</h2>
+                                <p>PopAppz delivers innovative mobile and web application solutions, helping businesses
+                                    transform ideas into seamless digital experiences.</p>
+                                <!-- Social Media -->
+                                <ul class="social">
+                                    <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="icofont-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/pop_appz/" target="_blank">
+                                            <i class="icofont-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/company/popappz-software-solutions-llp/?viewAsMember=true"
+                                            target="_blank">
+                                            <i class="icofont-linkedin"></i>
+                                        </a>
+                                    </li>
 
-                        </ul>
-                        <!-- End Social Media -->
-                    </div>
-                </div>
-
-                <!-- Quick Links -->
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="single-footer f-link">
-                        <h2>Quick Links</h2>
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-12">
-                                <ul>
-                                    <li><a href="index.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
-                                    <li><a href=""><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
-                                    <li><a href=""><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a></li>
-                                    <li><a href=""><i class="fa fa-caret-right" aria-hidden="true"></i>Contact</a></li>
                                 </ul>
+                                <!-- End Social Media -->
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <!-- Contact Us -->
-                <div class="col-lg-3 col-md-6 col-12" style="margin-left: 0px;">
-                    <div class="single-footer">
-                        <h2>Contact Us</h2>
-                        <p style="margin-left: -5px;">+91 8925477787</p>
-                        <p style="margin-left: -5px;"><a href="mailto:popappz@gmail.com">popappz@gmail.com</a></p>
-                    </div>
-                </div>
+                        <!-- Quick Links -->
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="single-footer f-link">
+                                <h2>Quick Links</h2>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <ul>
+                                            <li><a href="index.html"><i class="fa fa-caret-right"
+                                                        aria-hidden="true"></i>Home</a></li>
+                                            <li><a href=""><i class="fa fa-caret-right" aria-hidden="true"></i>About
+                                                    Us</a></li>
+                                            <li><a href=""><i class="fa fa-caret-right"
+                                                        aria-hidden="true"></i>Services</a></li>
+                                            <li><a href=""><i class="fa fa-caret-right"
+                                                        aria-hidden="true"></i>Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                <!-- Our Location -->
-                <div class="col-lg-3 col-md-6 col-12" style="margin-left: 0px;">
-                    <div class="single-footer">
-                        <h2>Our Location</h2>
-                        <p>No.129, Shop No.130, Plaza <br>Center,GN Chetty Road,<br> T Nagar, Chennai-17</p>
-                        
-                        <a href="https://maps.app.goo.gl/4ZX9PYhZb8tYpSTVA" target="_blank" class="btn" style="background-color: rgb(189, 4, 35); 
+                        <!-- Contact Us -->
+                        <div class="col-lg-3 col-md-6 col-12" style="margin-left: 0px;">
+                            <div class="single-footer">
+                                <h2>Contact Us</h2>
+                                <p style="margin-left: -5px;">+91 8925477787</p>
+                                <p style="margin-left: -5px;"><a
+                                        href="mailto:infopopappz@gmail.com">infopopappz@gmail.com</a></p>
+                            </div>
+                        </div>
+
+                        <!-- Our Location -->
+                        <div class="col-lg-3 col-md-6 col-12" style="margin-left: 0px;">
+                            <div class="single-footer">
+                                <h2>Our Location</h2>
+                                <p>No.129, Shop No.130, Plaza <br> Center,GN Chetty Road,<br> T Nagar, Chennai-17</p>
+
+                                <a href="https://maps.app.goo.gl/4ZX9PYhZb8tYpSTVA" target="_blank" class="btn"
+                                    style="background-color: rgb(189, 4, 35); 
           color: white; padding: 10px 20px; border-radius: 5px; display: inline-flex; align-items: center; text-decoration: none; margin-top: 20px;">
-                            <i class="icofont-location-pin" style="margin-right: 8px;"></i> Find Location
-                        </a>
+                                    <i class="icofont-location-pin" style="margin-right: 8px;"></i> Find Location
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-
             </div>
-        </div>
-    </div>
-    <!-- Footer Bottom Removed -->
-</footer>
+            <!-- Footer Bottom Removed -->
+        </footer>
 
 
         <!-- Floating Contact Buttons -->
@@ -1075,7 +1449,7 @@
             <a href="tel:+918925477787" class="floating-btn phone-btn" title="Call Us">
                 <i class="fa fa-phone"></i>
             </a>
-            
+
             <!-- WhatsApp Button -->
             <a href="https://wa.me/919965207787" target="_blank" class="floating-btn whatsapp-btn" title="WhatsApp Us">
                 <i class="fa fa-whatsapp"></i>
@@ -1084,9 +1458,9 @@
 
         <!-- jquery Min JS -->
         <script src="js/jquery.min.js"></script>
-        <!-- jquery Migrate JS -->
+        <!--jquery Migrate JS -->
         <script src="js/jquery-migrate-3.0.0.js"></script>
-        <!-- jquery Ui JS -->
+        <!--jquery Ui JS -->
         <script src="js/jquery-ui.min.js"></script>
         <!-- Easing JS -->
         <script src="js/easing.js"></script>
@@ -1122,6 +1496,19 @@
         <script src="js/bootstrap.min.js"></script>
         <!-- Main JS -->
         <script src="js/main.js"></script>
+
+        <!-- Duplicate gallery items once at runtime to create a seamless loop -->
+        <script>
+            (function () {
+                const track = document.getElementById('autoGallery');
+                if (!track) return;
+                // If not already duplicated, duplicate once for a continuous marquee
+                if (!track.dataset.duplicated) {
+                    track.innerHTML = track.innerHTML + track.innerHTML;
+                    track.dataset.duplicated = 'true';
+                }
+            })();
+        </script>
 </body>
 
 </html>
