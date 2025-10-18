@@ -429,7 +429,9 @@
                 text-align: center;
                 color: white;
             }
-
+.breadcrumbs.overlay::before { 
+            background: none !important; 
+        }
             .service-card {
                 transition: transform 0.3s ease-in-out;
                 border: none;
@@ -480,22 +482,19 @@
     <body>
 
         <!-- Breadcrumbs -->
-        <div class="breadcrumbs overlay" style="background: url('img/ser-bg.PNG') no-repeat center center/cover;margin-top: 10px;height: 300px;">
-            <div class="container">
-                <div class="bread-inner">
-                    <div class="row">
-                        <div class="col-12 text-center text-white">
-                            <h2>Service</h2>
-                            <ul class="bread-list d-inline-block">
-                                <li><a href="index.html" class="text-white">Home</a></li>
-                                <li><i class="icofont-simple-right text-white"></i></li>
-                                <li class="active text-white">Service</li>
-                            </ul>
-                        </div>
-                    </div>
+        <div class="breadcrumbs overlay" style="background: url('https://www.sliderrevolution.com/wp-content/uploads/2022/04/app.gif') no-repeat center center/cover; margin-top: 10px; height: 385px;">
+    <div class="container">
+        <div class="bread-inner">
+            <div class="row">
+                <div class="col-12 text-center text-white">
+                    
+                    
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
         <!-- End Breadcrumbs -->
 
         <!-- Our Services Carousel Section - Added after breadcrumbs -->

@@ -312,6 +312,7 @@ body{
 .header .logo {
 	float: left;
 	margin-top: 20px;
+	margin-bottom: 10px;
 }
 .header .navbar {
 	background: none;
@@ -1118,7 +1119,7 @@ body{
 }
 .call-action .content{
 	text-align:center;
-	padding:100px 265px;
+	padding:40px 265px;
 }
 .call-action .content h2{
 	color:#fff;
@@ -4006,7 +4007,7 @@ body{
 	position:relative;
 }
 .footer .footer-top{
-	padding:100px 0px;
+	padding:60px 0px;
 	position:relative;
 	background: #5CAB23;
 }
