@@ -1,0 +1,1138 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Site keywords here">
+    <meta name="description" content="">
+    <meta name='copyright' content=''>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>PopAppz - Products</title>
+    <link rel="icon" type="image/png" href="img/k1.jpg" style="width: 300px;">
+
+
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="css/nice-select.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- icofont CSS -->
+    <link rel="stylesheet" href="css/icofont.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" href="css/slicknav.min.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="css/owl-carousel.css">
+    <!-- Datepicker CSS -->
+    <link rel="stylesheet" href="css/datepicker.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!-- Medipro CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+
+<style>
+        /* Floating Contact Buttons */
+        .floating-contact-buttons {
+            position: fixed;
+            right: 20px;
+            top: 52%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .floating-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+
+        .phone-btn {
+            background-color:  #5CAB23;
+            color: white;
+        }
+
+        .phone-btn:hover {
+            background-color: #5CAB23;
+            color: white;
+            transform: scale(1.1);
+            text-decoration: none;
+        }
+
+        .whatsapp-btn {
+            background-color: white;
+            color:  #5CAB23;
+            border: 2px solid  #5CAB23;
+        }
+
+        .whatsapp-btn:hover {
+            background-color:  #5CAB23;
+            color: white;
+            transform: scale(1.1);
+            text-decoration: none;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            }
+            50% {
+                box-shadow: 0 4px 20px rgba(23, 86, 155, 0.4);
+            }
+            100% {
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            }
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .floating-contact-buttons {
+                right: 15px;
+            }
+
+            .floating-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+            }
+        }
+
+        /* Remove extra top padding only on mobile */
+        @media (max-width: 767px) {
+            .features.section {
+                padding-top: 50px !important;
+                /* adjust as needed */
+            }
+
+            .single-feature {
+                margin-bottom: 30px;
+                /* adjust gap as needed */
+            }
+        }
+
+        /* Remove extra top space in mobile only */
+        @media (max-width: 767px) {
+            #fun-facts {
+                padding-top: 30px !important;
+                /* reduce space */
+            }
+        }
+
+
+
+                /* Product Carousel Styles */
+        .product-carousel-section {
+            margin-top: 0px;
+            padding: 80px;
+            /* removed large padding */
+            background: whitesmoke;
+            /* removed gray background */
+        }
+
+        .carousel-container {
+            position: relative;
+            background: transparent;
+            /* removed white box background */
+            border-radius: 0;
+            /* no round corners */
+            padding: 0;
+            /* removed inner padding */
+            box-shadow: none;
+            /* removed shadow */
+            min-height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .carousel-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            gap: 60px;
+        }
+
+        .carousel-left {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .product-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .product-logo {
+            width: 150px;
+            height: auto;
+            border-radius: 12px;
+            object-fit: contain;
+            background: white;
+            padding: 8px;
+        }
+
+        .product-title-group h2 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #000;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .product-title-group p {
+            font-size: 18px;
+            color: #666;
+            margin: 5px 0 0 0;
+        }
+
+        .product-description {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+
+        .product-stats {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stat-number {
+            font-size: 28px;
+            font-weight: 700;
+            color: #5CAB23;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: #999;
+            margin-top: 5px;
+        }
+
+        /* View More Button aligned with stats */
+        .view-more-btn {
+            background-color: #5CAB23;
+            color: white;
+            border: none;
+            padding: 12px 28px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            height: fit-content;
+            outline: none;
+        }
+
+        .view-more-btn:hover {
+            background-color: #3e8e13;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(92, 171, 35, 0.3);
+        }
+
+        .view-more-btn:focus,
+        .view-more-btn:active {
+            outline: none;
+            /* removes black outline on click/focus */
+            box-shadow: none;
+            /* remove any default box-shadow */
+            background-color: #5CAB23;
+            /* maintain green color on click */
+        }
+
+        .carousel-right {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+        }
+
+        /* Phone mockup positioned to the right */
+        .phone-mockup {
+            width: 280px;
+            height: 520px;
+            background: #000;
+            border-radius: 40px;
+            padding: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .phone-mockup::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 25px;
+            background: #000;
+            border-radius: 0 0 25px 25px;
+            z-index: 10;
+        }
+
+        .phone-screen {
+            width: 100%;
+            height: 100%;
+            background: white;
+            border-radius: 35px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .phone-header {
+            background: #f5f5f5;
+            padding: 15px;
+            text-align: center;
+            font-size: 12px;
+            font-weight: 600;
+            color: #333;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .phone-content {
+            flex: 1;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 15px;
+        }
+
+        .phone-item {
+            background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
+            height: 80px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+        .phone-footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 12px;
+            border-top: 1px solid #e0e0e0;
+            background: white;
+        }
+
+        .phone-footer-icon {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+
+        /* Navigation arrows */
+        .carousel-nav {
+            position: absolute;
+            bottom: -10px;
+            left: 0px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .carousel-arrow {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #5CAB23;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .carousel-arrow:hover {
+            background: #5CAB23;
+            transform: scale(1.1);
+        }
+.carousel-arrow:focus {
+    outline: 0px solid #5CAB23; /* Match your green color */
+    outline-offset: 2px; /* Optional: space between outline and button */
+}
+
+        .carousel-arrow:active {
+            transform: scale(0.95);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .carousel-content {
+                gap: 40px;
+            }
+
+            .product-title-group h2 {
+                font-size: 28px;
+            }
+
+            .phone-mockup {
+                width: 240px;
+                height: 480px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .carousel-content {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .carousel-right {
+                justify-content: center;
+            }
+
+            .product-title-group h2 {
+                font-size: 24px;
+            }
+
+            .product-stats {
+                gap: 20px;
+            }
+
+            .phone-mockup {
+                width: 200px;
+                height: 400px;
+            }
+
+            .carousel-nav {
+                bottom: 20px;
+                left: 30px;
+            }
+
+            .carousel-arrow {
+                width: 40px;
+                height: 40px;
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .carousel-left {
+                gap: 15px;
+            }
+
+            .product-title-group h2 {
+                font-size: 20px;
+            }
+
+            .product-description {
+                font-size: 14px;
+            }
+
+            .product-stats {
+                gap: 15px;
+                flex-wrap: wrap;
+            }
+
+            .stat-number {
+                font-size: 24px;
+            }
+
+            .phone-mockup {
+                width: 160px;
+                height: 320px;
+            }
+
+            .carousel-nav {
+                bottom: -55px;
+                left: 0px;
+            }
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+
+   <div class="preloader">
+        <div class="loader">
+            <img src="img/k1.jpg" alt="Loading..." class="preloader-image">
+        </div>
+    </div>
+
+    <style>
+        /* Preloader styles */
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            /* or semi-transparent */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+
+        /* Fade out effect when loading finishes */
+        .preloader.fade-out {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .preloader-image {
+            width: 100px;
+            /* adjust size */
+            height: 100px;
+            border-radius: 10%;
+            /* makes the image circular */
+            object-fit: cover;
+            /* ensures the image fits nicely in the circle */
+        }
+    </style>
+
+    <script>
+        // Hide preloader after page loads
+        window.addEventListener("load", function () {
+            const preloader = document.querySelector(".preloader");
+            preloader.classList.add("fade-out");
+        });
+    </script>
+
+    <!-- End Preloader -->
+    <!-- Header Area -->
+    <header class="header">
+        <!-- Topbar -->
+
+        <!-- End Topbar -->
+        <header>
+            <!-- Header Inner -->
+            <div class="header-inner">
+                <div class="container">
+                    <div class="inner">
+                        <div class="row align-items-center">
+                            <div class="col-lg-3 col-md-3 col-12">
+                                <!-- Start Logo -->
+                                <div class="logo">
+                                    <a href="index.html"><img src="img/logo1.png" style="height: 100px;width: auto;"
+                                            alt="PopAppz"></a>
+                                </div>
+                                <!-- End Logo -->
+                                <!-- Mobile Nav -->
+                                <div class="mobile-nav"></div>
+                                <!-- End Mobile Nav -->
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-12">
+                                <!-- Main Menu -->
+                                <div class="main-menu">
+                                    <nav class="navigation">
+                                        <ul class="nav menu d-flex align-items-center justify-content-end">
+                                            <li class=><a href="index.html">Home</a></li>
+                                            <li><a href="about.html">About Us</a></li>
+                                            <li><a href="service.html">Services</a></li>
+                                            <li class="active"><a href="products.html">Products</a></li>
+                                            <li ><a href="client.html">Clients</a></li>
+                                            <li>
+                                                <a href="contact.html" class="btn"
+                                                    style="background-color: #5CAB23; color: #fff; font-weight: 600; padding: 8px 20px; border-radius: 5px; margin-left: 15px;">
+                                                    Contact Us
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <!--/ End Main Menu -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/ End Header Inner -->
+        </header>
+
+        <style>
+            /* Breadcrumbs Background */
+            .breadcrumbs {
+                background: url('img/service-banner.jpg') no-repeat center center/cover;
+                padding: 80px 0;
+                text-align: center;
+                color: white;
+            }
+
+            /* Service Card Styling */
+            .service-card {
+                transition: transform 0.3s ease-in-out;
+                border: none;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .service-card:hover {
+                transform: translateY(-10px);
+            }
+
+            .service-icon {
+                font-size: 50px;
+                color: #007bff;
+            }
+
+            /* Why Choose Us Section */
+            .why-choose-us {
+                background: #f8f9fa;
+                padding: 50px 0;
+            }
+
+            .feature-box {
+                text-align: center;
+                padding: 20px;
+            }
+
+            .feature-box i {
+                font-size: 40px;
+                color: #28a745;
+            }
+
+            /* CTA Section */
+            .cta-section {
+                background: url('img/cta-bg.jpg') no-repeat center center/cover;
+                padding: 60px 0;
+                text-align: center;
+                color: white;
+            }
+
+            .cta-btn {
+                background:  #5CAB23;
+                border: none;
+                padding: 15px 30px;
+                font-size: 18px;
+            }
+        </style>
+        </head>
+
+        <body>
+
+            <!-- Breadcrumbs -->
+            <div class="breadcrumbs overlay" style="background: url('img/serve.jpg') no-repeat center center/cover;margin-top: 10px;">
+                <div class="container">
+                    <div class="bread-inner">
+                        <div class="row">
+                            <div class="col-12 text-center text-white">
+                                <h2>Our Cutting-Edge Products</h2>
+                                <ul class="bread-list d-inline-block">
+                                    <li><a href="index.html" class="text-white">Home</a></li>
+                                    <li><i class="icofont-simple-right text-white"></i></li>
+                                    <li class="active text-white">Products</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Breadcrumbs -->
+
+<section class="cta-section" style="background-color: #ffffff;">
+    <div class="container">
+        <h2 style="margin-bottom: 20px;">Explore Our Innovative Products</h2>
+        <p>At PopAppz Software Solutions, we created innovative products to simplify,<br> optimize, and elevate your business.</p>
+    </div>
+</section>
+
+
+
+     <!-- Product Carousel Section - Added after breadcrumbs -->
+    <section class="product-carousel-section">
+        <div class="container">
+            <div class="carousel-container">
+                <div class="carousel-content">
+
+                    <!-- Product 1 -->
+                    <div class="carousel-item active">
+                        <div class="carousel-left">
+                            <div class="product-header">
+                                <img src="img/kasaap.PNG" alt="Meat Delivery Logo" class="product-logo">
+                                <div class="product-title-group">
+                                    <h2>Kasapp Meat Delivery</h2>
+                                    <p>Online Meat & Seafood Delivery</p>
+                                </div>
+                            </div>
+
+                            <p class="product-description">
+                                Buy <b>fresh chicken, mutton, seafood, and eggs</b> delivered to your doorstep.
+                                Juicy drumsticks, tender lamb chops, premium prawns, and brown eggs — all hygienically
+                                packed and fresh.
+                              
+                                Available from <b>6 AM to 8 PM</b>, perfect for daily meals, weekend feasts, or special
+                                occasions!
+                            </p>
+
+
+                            <div class="product-stats">
+                                <div class="stat-item">
+                                    <span class="stat-number">3.5</span>
+                                    <span class="stat-label">Customer Rating</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">100+</span>
+                                    <span class="stat-label">Happy Users</span>
+                                </div>
+                                <button class="view-more-btn"
+                                    onclick="window.open('https://play.google.com/store/apps/details?id=com.kasapp&pcampaignid=web_share', '_blank')">
+                                    View More
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="carousel-right">
+                            <div class="phone-mockup">
+                                <div class="phone-screen">
+                                    <!-- Replace with your image -->
+                                    <img src="img/kasaap-mobile.webp" alt="Fresh Cuts App Preview" class="phone-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Product 2 -->
+                   <div class="carousel-item active">
+    <div class="carousel-left">
+        <div class="product-header">
+            <img src="img/Deliwings Delivers.PNG" alt="Deliwings Logo" class="product-logo">
+            <div class="product-title-group">
+                <h2>Deliwings Delivers</h2>
+                <p>Food, Grocery & Services App</p>
+            </div>
+        </div>
+
+        <p class="product-description">
+            Get <b>food, groceries, home services, and parcels</b> delivered instantly. From fresh meals, 
+            premium seafood, and daily essentials to trusted handyman services and secure local deliveries— 
+            Deliwings brings everything to your doorstep. Fast, reliable, and available from <b>6 AM to 8 PM</b>.
+        </p>
+
+        <div class="product-stats">
+            <div class="stat-item">
+                <span class="stat-number">4.8</span>
+                <span class="stat-label">Customer Rating</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">100+</span>
+                <span class="stat-label">Happy Users</span>
+            </div>
+            <button class="view-more-btn"
+                onclick="window.open('https://play.google.com/store/apps/details?id=com.deliwingsdelivers&pcampaignid=web_share')">
+                View More
+            </button>
+        </div>
+    </div>
+
+    <div class="carousel-right">
+        <div class="phone-mockup">
+            <div class="phone-screen">
+                <!-- Image fitting inside phone screen -->
+                <img src="img/dweling.webp" alt="Deliwings App Preview" class="phone-image" style="width:100%; height:100%; object-fit:cover; border-radius: 35px;">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+                    <!-- Product 3 -->
+                    <div class="carousel-item active">
+    <div class="carousel-left">
+        <div class="product-header">
+            <img src="img/Royal Cavery.JPG" alt="Royal Kavery Logo" class="product-logo">
+            <div class="product-title-group">
+                <h2>Royal Kavery</h2>
+                <p>Business Services & Subscription Management</p>
+            </div>
+        </div>
+
+        <p class="product-description">
+            Discover the best business services around you and manage your subscriptions seamlessly. Enroll, connect, and enhance your business presence effortlessly with features designed to help you grow and succeed.
+        </p>
+
+        <div class="product-stats">
+            <div class="stat-item">
+                <span class="stat-number">3.2</span>
+                <span class="stat-label">Customer Rating</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Active Users</span>
+            </div>
+            <button class="view-more-btn"
+                onclick="window.open('https://play.google.com/store/apps/details?id=com.royalKaveryapp&pcampaignid=web_share')">
+                View More
+            </button>
+        </div>
+    </div>
+
+    <div class="carousel-right">
+        <div class="phone-mockup">
+            <div class="phone-screen">
+                <!-- Replace with your app image -->
+                <img src="img/rk.webp" alt="Royal Kavery App Preview" class="phone-image">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+                    <!-- Product 4 -->
+                    <div class="carousel-item active">
+    <div class="carousel-left">
+        <div class="product-header">
+            <img src="img/GrowMart.JPEG" alt="GroMart Logo" class="product-logo">
+            <div class="product-title-group">
+                <h2>GroMart</h2>
+                <p>Local Grocery & Milk Delivery App</p>
+            </div>
+        </div>
+
+        <p class="product-description">
+            GroMart makes ordering groceries, milk, and daily essentials easy and fast from your trusted neighborhood store. 
+            Subscribe to daily milk, order kitchen staples, and pay via UPI or Cash on Delivery—all delivered based on your location.
+        </p>
+
+        <div class="product-stats">
+            <div class="stat-item">
+                <span class="stat-number">3.7</span>
+                <span class="stat-label">Customer Rating</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">100+</span>
+                <span class="stat-label">Happy Users</span>
+            </div>
+            <button class="view-more-btn"
+                onclick="window.open('https://play.google.com/store/apps/details?id=com.gromartappuser&pcampaignid=web_share')">
+                View More
+            </button>
+        </div>
+    </div>
+
+    <div class="carousel-right">
+        <div class="phone-mockup">
+            <div class="phone-screen">
+                <!-- Replace with your GroMart app preview image -->
+                <img src="img/grow.webp" alt="GroMart App Preview" class="phone-image">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+                </div>
+
+                <!-- Navigation Arrows -->
+                <div class="carousel-nav">
+                    <button class="carousel-arrow" onclick="prevSlide()">
+                        <i class="fa fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-arrow" onclick="nextSlide()">
+                        <i class="fa fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        /* Make image fit perfectly inside the phone mockup */
+        .phone-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 35px;
+        }
+
+        /* Optional subtle border or shadow for better look */
+        .phone-screen {
+            background: #fff;
+            border-radius: 35px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+        }
+    </style>
+    <script>
+        let current = 0;
+        const items = document.querySelectorAll('.carousel-item');
+
+        function showSlide(index) {
+            items.forEach((item, i) => {
+                item.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextSlide() {
+            current = (current + 1) % items.length;
+            showSlide(current);
+        }
+
+        function prevSlide() {
+            current = (current - 1 + items.length) % items.length;
+            showSlide(current);
+        }
+
+        showSlide(current);
+    </script>
+
+    <style>
+        .carousel-item {
+            display: none;
+        }
+
+        .carousel-item.active {
+            display: flex;
+        }
+    </style>
+
+
+            
+            <!-- CTA Section -->
+           <section class="cta-section">
+    <div class="container">
+        <h2>Ready to Create with PopAppz?</h2>
+        <p>Empowering your business with powerful, scalable, and innovation-driven software solutions.</p><br>
+        <a href="contact.html" class="btn btn-lg cta-btn" style="background-color: #5CAB23;">Contact With Us</a>
+    </div>
+</section>
+
+<style>
+    .cta-btn:hover {
+        background-color: #3e8e13 !important; /* dark green hover */
+        transition: background-color 0.3s ease;
+    }
+</style>
+
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+ <!-- Footer Area -->
+        <footer id="footer" class="footer">
+            <!-- Footer Top -->
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <!-- About Us -->
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="single-footer">
+                                <h2>About PopAppz</h2>
+                                <p>PopAppz delivers innovative mobile and web application solutions, helping businesses
+                                    transform ideas into seamless digital experiences.</p>
+                                <!-- Social Media -->
+                                <ul class="social">
+                                    <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="icofont-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/pop_appz/" target="_blank">
+                                            <i class="icofont-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/company/popappz-software-solutions-llp/?viewAsMember=true"
+                                            target="_blank">
+                                            <i class="icofont-linkedin"></i>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                                <!-- End Social Media -->
+                            </div>
+                        </div>
+
+                        <!-- Quick Links -->
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="single-footer f-link">
+                                <h2>Quick Links</h2>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <ul>
+                                            <li><a href="index.html"><i class="fa fa-caret-right"
+                                                        aria-hidden="true"></i>Home</a></li>
+                                            <li><a href="about.html"><i class="fa fa-caret-right" aria-hidden="true"></i>About
+                                                    Us</a></li>
+                                            <li><a href="service.html"><i class="fa fa-caret-right"
+                                                        aria-hidden="true"></i>Services</a></li>
+                                            <li><a href="contact.html"><i class="fa fa-caret-right"
+                                                        aria-hidden="true"></i>Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Us -->
+                        <div class="col-lg-3 col-md-6 col-12" style="margin-left: 0px;">
+                            <div class="single-footer">
+                                <h2>Contact Us</h2>
+                                <p style="margin-left: -5px;">+91 8925477787</p>
+                                <p style="margin-left: -5px;"><a
+                                        href="mailto:infopopappz@gmail.com">infopopappz@gmail.com</a></p>
+                            </div>
+                        </div>
+
+                        <!-- Our Location -->
+                        <div class="col-lg-3 col-md-6 col-12" style="margin-left: 0px;">
+                            <div class="single-footer">
+                                <h2>Our Location</h2>
+                                <p>No.129, Shop No.130, Plaza <br> Center,GN Chetty Road,<br> T Nagar, Chennai-17</p>
+
+                                <a href="https://maps.app.goo.gl/4ZX9PYhZb8tYpSTVA" target="_blank" class="btn"
+                                    style="background-color: rgb(189, 4, 35); 
+          color: white; padding: 10px 20px; border-radius: 5px; display: inline-flex; align-items: center; text-decoration: none; margin-top: 20px;">
+                                    <i class="icofont-location-pin" style="margin-right: 8px;"></i> Find Location
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Bottom Removed -->
+        </footer>
+
+        <div class="floating-contact-buttons">
+            <!-- Phone Button -->
+            <a href="tel:+918925477787" class="floating-btn phone-btn" title="Call Us">
+                <i class="fa fa-phone"></i>
+            </a>
+
+            <!-- WhatsApp Button -->
+            <a href="https://wa.me/919965207787" target="_blank" class="floating-btn whatsapp-btn" title="WhatsApp Us">
+                <i class="fa fa-whatsapp"></i>
+            </a>
+        </div>
+
+<script>
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            const isActive = answer.classList.contains('active');
+
+            // Close all other FAQ items
+            document.querySelectorAll('.faq-answer.active').forEach(item => {
+                item.classList.remove('active');
+            });
+            document.querySelectorAll('.faq-question.active').forEach(item => {
+                item.classList.remove('active');
+            });
+
+            // Toggle current item
+            if (!isActive) {
+                answer.classList.add('active');
+                element.classList.add('active');
+            }
+        }
+    </script>
+
+
+            <!-- jquery Min JS -->
+            <script src="js/jquery.min.js"></script>
+            <!-- jquery Migrate JS -->
+            <script src="js/jquery-migrate-3.0.0.js"></script>
+            <!-- jquery Ui JS -->
+            <script src="js/jquery-ui.min.js"></script>
+            <!-- Easing JS -->
+            <script src="js/easing.js"></script>
+            <!-- Color JS -->
+            <script src="js/colors.js"></script>
+            <!-- Popper JS -->
+            <script src="js/popper.min.js"></script>
+            <!-- Bootstrap Datepicker JS -->
+            <script src="js/bootstrap-datepicker.js"></script>
+            <!-- Jquery Nav JS -->
+            <script src="js/jquery.nav.js"></script>
+            <!-- Slicknav JS -->
+            <script src="js/slicknav.min.js"></script>
+            <!-- ScrollUp JS -->
+            <script src="js/jquery.scrollUp.min.js"></script>
+            <!-- Niceselect JS -->
+            <script src="js/niceselect.js"></script>
+            <!-- Tilt Jquery JS -->
+            <script src="js/tilt.jquery.min.js"></script>
+            <!-- Owl Carousel JS -->
+            <script src="js/owl-carousel.js"></script>
+            <!-- counterup JS -->
+            <script src="js/jquery.counterup.min.js"></script>
+            <!-- Steller JS -->
+            <script src="js/steller.js"></script>
+            <!-- Wow JS -->
+            <script src="js/wow.min.js"></script>
+            <!-- Magnific Popup JS -->
+            <script src="js/jquery.magnific-popup.min.js"></script>
+            <!-- Counter Up CDN JS -->
+            <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+            <!-- Google Map API Key JS -->
+            <script src="https://maps.google.com/maps/api/js?key=AIzaSyDGqTyqoPIvYxhn_Sa7ZrK5bENUWhpCo0w"></script>
+            <!-- Gmaps JS -->
+            <script src="js/gmaps.min.js"></script>
+            <!-- Map Active JS -->
+            <script src="js/map-active.js"></script>
+            <!-- Bootstrap JS -->
+            <script src="js/bootstrap.min.js"></script>
+            <!-- Main JS -->
+            <script src="js/main.js"></script>
+        </body>
+
+</html>

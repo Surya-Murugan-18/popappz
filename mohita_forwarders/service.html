@@ -11,10 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Title -->
-    <title>Runway Packers - Services</title>
-    <link rel="icon" type="image/png" href="img/titlelogo.jpg" style="width: 300px;">
-
-
+    <title>PopAppz - Services</title>
+    <link rel="icon" type="image/png" href="img/k1.jpg" style="width: 300px;">
 
     <!-- Favicon -->
     <link rel="icon" href="img/favicon.png">
@@ -48,8 +46,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/responsive.css">
 
-
-<style>
+    <style>
         /* Floating Contact Buttons */
         .floating-contact-buttons {
             position: fixed;
@@ -77,12 +74,12 @@
         }
 
         .phone-btn {
-            background-color:  #5CAB23;
+            background-color: #5CAB23;
             color: white;
         }
 
         .phone-btn:hover {
-            background-color: #134a85;
+            background-color: #5CAB23;
             color: white;
             transform: scale(1.1);
             text-decoration: none;
@@ -90,12 +87,12 @@
 
         .whatsapp-btn {
             background-color: white;
-            color:  #5CAB23;
-            border: 2px solid  #5CAB23;
+            color: #5CAB23;
+            border: 2px solid #5CAB23;
         }
 
         .whatsapp-btn:hover {
-            background-color:  #5CAB23;
+            background-color: #5CAB23;
             color: white;
             transform: scale(1.1);
             text-decoration: none;
@@ -130,12 +127,10 @@
         @media (max-width: 767px) {
             .features.section {
                 padding-top: 50px !important;
-                /* adjust as needed */
             }
 
             .single-feature {
                 margin-bottom: 30px;
-                /* adjust gap as needed */
             }
         }
 
@@ -143,197 +138,291 @@
         @media (max-width: 767px) {
             #fun-facts {
                 padding-top: 30px !important;
-                /* reduce space */
             }
         }
-    </style>
+/*our services section  */
+       .our-services-section {
+        background: white;
+        background-image:
+            radial-gradient(circle at 20% 50%, rgba(92, 171, 35, 0.1) 0%, transparent 50%),
+            radial-gradient(circle at 80% 80%, rgba(92, 171, 35, 0.05) 0%, transparent 50%);
+        padding: 80px 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .our-services-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image:
+            url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%235CAB23' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM36 4V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");
+        opacity: 0.3;
+        pointer-events: none;
+    }
+
+    .services-container {
+        position: relative;
+        z-index: 1;
+    }
+
+    .carousel-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .carousel-nav-btn {
+        background: transparent;
+        border: 2px solid #5CAB23;
+        color: #5CAB23;
+        outline: #5CAB23;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-size: 20px;
+        z-index: 10;
+    }
+
+    .carousel-nav-btn:hover {
+        background: #5CAB23;
+        color: white;
+    }
+.carousel-nav-btn:focus {
+    outline: 0px solid #5CAB23 !important;
+    
+}
 
     
+
+    .services-carousel {
+        flex: 1;
+        overflow: hidden;
+    }
+
+    .carousel-track {
+        display: flex;
+        gap: 30px;
+        transition: transform 0.5s ease;
+    }
+
+    .service-item {
+        flex: 0 0 calc(33.333% - 20px);
+        text-align: center;
+        animation: slideIn 0.5s ease;
+    }
+
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .hexagon-icon {
+        width: 140px;
+        height: 140px;
+        margin: 0 auto 30px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hexagon-icon svg {
+        width: 100%;
+        height: 100%;
+        filter: drop-shadow(0 10px 30px rgba(92, 171, 35, 0.3));
+    }
+
+    .hexagon-icon i {
+        position: absolute;
+        font-size: 50px;
+        color: white;
+        z-index: 2;
+        text-shadow: 0 0 10px rgba(62, 142, 29, 0.5);
+    }
+
+    .service-item h3 {
+        color: #5CAB23;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .service-item p {
+        color: black;
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 0;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #5CAB23;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .carousel-dots {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 40px;
+    }
+
+    .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #5CAB23;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+    }
+
+    .dot.active {
+        background: #3E8E1D;
+        width: 30px;
+        border-radius: 6px;
+    }
+
+    @media (max-width: 1024px) {
+        .service-item {
+            flex: 0 0 calc(50% - 15px);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .our-services-section {
+            padding: 50px 0;
+        }
+
+        .service-item {
+            flex: 0 0 100%;
+        }
+
+        .carousel-nav-btn {
+            width: 40px;
+            height: 40px;
+            font-size: 16px;
+        }
+
+        .hexagon-icon {
+            width: 100px;
+            height: 100px;
+        }
+
+        .hexagon-icon i {
+            font-size: 36px;
+        }
+
+        .service-item h3 {
+            font-size: 18px;
+        }
+
+        .service-item p {
+            font-size: 13px;
+        }
+    }
+    </style>
 </head>
 
 <body>
 
     <!-- Preloader -->
     <div class="preloader">
-    <div class="loader">
-        <img src="img/titlelogo.jpg" alt="Loading..." class="preloader-image">
+        <div class="loader">
+            <img src="img/k1.jpg" alt="Loading..." class="preloader-image">
+        </div>
     </div>
-</div>
 
-<style>
-    /* Preloader styles */
-    .preloader {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #fff; /* or semi-transparent */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 9999;
-        transition: opacity 0.5s ease, visibility 0.5s ease;
-    }
+    <style>
+        /* Preloader styles */
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
 
-    /* Fade out effect when loading finishes */
-    .preloader.fade-out {
-        opacity: 0;
-        visibility: hidden;
-    }
+        .preloader.fade-out {
+            opacity: 0;
+            visibility: hidden;
+        }
 
-    .preloader-image {
-        width: 100px; /* adjust size */
-        height: 100px;
-        border-radius: 20%; /* makes the image circular */
-        object-fit: cover; /* ensures the image fits nicely in the circle */
-    }
-</style>
+        .preloader-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 10%;
+            object-fit: cover;
+        }
+    </style>
 
-<script>
-    // Hide preloader after page loads
-    window.addEventListener("load", function() {
-        const preloader = document.querySelector(".preloader");
-        preloader.classList.add("fade-out");
-    });
-</script>
-    <!-- End Preloader -->
-
+    <script>
+        window.addEventListener("load", function () {
+            const preloader = document.querySelector(".preloader");
+            preloader.classList.add("fade-out");
+        });
+    </script>
 
     <!-- Header Area -->
     <header class="header">
-        <!-- Topbar -->
-        <div class="topbar">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-5 col-12">
-                <!-- Contact -->
-                <ul class="top-link">
-                   
-                </ul>
-                <!-- End Contact -->
-            </div>
-            <div class="col-lg-6 col-md-7 col-12">
-                <!-- Top Contact -->
-                <ul class="top-contact">
-                    <li><i class="fa fa-phone orange small-icon"></i>+91 9176867827,9789989120</li>
-                    <li><i class="fa fa-envelope small-icon"></i>
-                        <a href="runwaypackersandmovers@gmail.com">runwaypackersandmovers@gmail.com</a>
-                    </li>
-                </ul>
-                <!-- End Top Contact -->
-            </div>
-        </div>
-    </div>
-</div>
-
-<style>
-/* Reduce only phone & email icons */
-.top-contact .small-icon {
-    font-size: 11px;  /* adjust size here */
-    margin-right: 2px; /* keep spacing */
-}
-</style>
-
-        <!-- End Topbar -->
         <header>
-    <!-- Header Inner -->
-    <div class="header-inner">
-        <div class="container">
-            <div class="inner">
-                <div class="row align-items-center">
-                    <!-- Logo -->
-                    <div class="col-lg-3 col-md-3 col-12">
-                        <div class="logo">
-                            <a href="index.html"><img src="img/final-runway-logo 2.png" style="height: 67px;" alt="Runway Packers"></a>
-                        </div>
-                        <div class="mobile-nav"></div>
-                    </div>
-
-                    <!-- Main Menu -->
-                    <div class="col-lg-7 col-md-9 col-12">
-                        <div class="main-menu">
-                            <nav class="navigation">
-                                <ul class="nav menu">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li ><a href="about.html">About Us</a></li>
-                                    <li class="active"><a href="service.html">Services</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
-                                    <li><a href="">Admin Login</a></li>
-                                    <li><a href="faq.html">FAQ</a></li>
-
-                                    <!-- Mobile Only Track Button -->
-                                    <li class="d-block d-lg-none text-center mt-2">
-                                        <a href="" class="btn track-btn">
-                                            Track Shipment
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-
-                    <!-- Track Shipment Button -->
-                    <div class="col-lg-2 col-12 text-end">
-                        <div class="get-quote">
-                            <a href="" class="btn track-btn">
-                               Track Shipment
-                            </a>
+            <div class="header-inner">
+                <div class="container">
+                    <div class="inner">
+                        <div class="row align-items-center">
+                            <div class="col-lg-3 col-md-3 col-12">
+                                <div class="logo">
+                                    <a href="index.html"><img src="img/logo1.png" style="height: 100px;width: auto;"
+                                            alt="PopAppz"></a>
+                                </div>
+                                <div class="mobile-nav"></div>
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-12">
+                                <div class="main-menu">
+                                    <nav class="navigation">
+                                        <ul class="nav menu d-flex align-items-center justify-content-end">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="about.html">About Us</a></li>
+                                            <li class="active"><a href="service.html">Services</a></li>
+                                            <li><a href="products.html">Products</a></li>
+                                            <li><a href="client.html">Clients</a></li>
+                                            <li>
+                                                <a href="contact.html" class="btn"
+                                                    style="background-color: #5CAB23; color: #fff; font-weight: 600; padding: 8px 20px; border-radius: 5px; margin-left: 15px;">
+                                                    Contact Us
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!--/ End Header Inner -->
-</header>
-
-<style>
-/* Force menu items to stay in one row */
-.header .main-menu .nav.menu {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Prevent breaking of menu text */
-.header .nav.menu li a {
-    white-space: nowrap;
-    padding: 25px 10px;
-}
-
-/* Optional: reduce spacing for smaller screens */
-@media (max-width: 1200px) {
-    .header .nav.menu li a {
-        padding: 20px 8px;
-    }
-}
-
-/* Track Shipment Button Fix */
-.track-btn {
-    background-color:  #5CAB23 !important;
-    color: #fff !important;
-    border-radius: 50px !important;
-    padding: 10px 25px !important;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-/* Remove hover underline and keep background */
-.track-btn::before {
-    content: none !important;
-}
-
-.track-btn:hover {
-    background-color:  #5CAB23 !important;
-    color: #fff !important;
-    border-radius: 50px !important;
-}
-</style>
+        </header>
 
         <style>
-            /* Breadcrumbs Background */
             .breadcrumbs {
                 background: url('img/service-banner.jpg') no-repeat center center/cover;
                 padding: 80px 0;
@@ -341,7 +430,6 @@
                 color: white;
             }
 
-            /* Service Card Styling */
             .service-card {
                 transition: transform 0.3s ease-in-out;
                 border: none;
@@ -358,7 +446,6 @@
                 color: #007bff;
             }
 
-            /* Why Choose Us Section */
             .why-choose-us {
                 background: #f8f9fa;
                 padding: 50px 0;
@@ -374,7 +461,6 @@
                 color: #28a745;
             }
 
-            /* CTA Section */
             .cta-section {
                 background: url('img/cta-bg.jpg') no-repeat center center/cover;
                 padding: 60px 0;
@@ -389,453 +475,645 @@
                 font-size: 18px;
             }
         </style>
-        </head>
+    </head>
 
-        <body>
+    <body>
 
-            <!-- Breadcrumbs -->
-            <div class="breadcrumbs overlay" style="background: url('img/header-1.jpg') no-repeat center center/cover;margin-top: 10px;">
-                <div class="container">
-                    <div class="bread-inner">
-                        <div class="row">
-                            <div class="col-12 text-center text-white">
-                                <h2>Service</h2>
-                                <ul class="bread-list d-inline-block">
-                                    <li><a href="index.html" class="text-white">Home</a></li>
-                                    <li><i class="icofont-simple-right text-white"></i></li>
-                                    <li class="active text-white">Service</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Breadcrumbs -->
-
-
-            <section class="schedule" style="padding-top: 60px;">
-                <div class="container">
-                    <!-- Intro Text -->
-                    <div class="section-title text-center mb-5">
-
-                        <h4>Hassle-Free Moving with Runway Packers</h4>
-                        <p>Reliable, safe, and efficient relocation services for homes, offices, and businesses across
-                            India.</p>
-                    </div>
-
-                    <div class="schedule-inner">
-                        <!-- First Row -->
-                        <div class="row mb-4"> <!-- Added mb-4 for spacing after the row -->
-                            <!-- House Relocations -->
-                            <div class="col-lg-4 col-md-6 col-12">
-                                <div class="single-schedule first">
-                                    <div class="inner">
-                                        <div class="icon">
-                                            <i class="fa fa-home"></i>
-                                        </div>
-                                        <div class="single-content">
-                                            <span>Safe & Reliable</span>
-                                            <h4>House Relocations</h4>
-                                            <p>Runway Packers ensures stress-free home shifting with expert packing,
-                                                secure
-                                                loading, and on-time delivery.</p>
-                                            <a href="service.html">LEARN MORE <i class="fa fa-long-arrow-right"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Corporate Relocations -->
-                            <div class="col-lg-4 col-md-6 col-12">
-                                <div class="single-schedule middle">
-                                    <div class="inner">
-                                        <div class="icon">
-                                            <i class="fa fa-building"></i>
-                                        </div>
-                                        <div class="single-content">
-                                            <span>Professional</span>
-                                            <h4>Corporate Relocations</h4>
-                                            <p>We specialize in smooth and efficient office relocations, minimizing
-                                                downtime
-                                                and ensuring business continuity.</p>
-                                            <a href="service.html">LEARN MORE <i class="fa fa-long-arrow-right"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Premium Moving Service -->
-                            <div class="col-lg-4 col-md-6 col-12">
-                                <div class="single-schedule middle">
-                                    <div class="inner">
-                                        <div class="icon">
-                                            <i class="fa fa-gem"></i>
-                                        </div>
-                                        <div class="single-content">
-                                            <span>Exclusive Care</span>
-                                            <h4>Premium Moving Service</h4>
-                                            <p>From antique furniture to luxury cars, Runway Packers offers customized
-                                                packing solutions for high-value items.</p>
-                                            <a href="service.html">LEARN MORE <i class="fa fa-long-arrow-right"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Second Row -->
-                        <div class="row mb-4"> <!-- Added mb-4 for spacing after the row -->
-                            <!-- Car Transportation -->
-                            <div class="col-lg-4 col-md-6 col-12">
-                                <div class="single-schedule last">
-                                    <div class="inner">
-                                        <div class="icon">
-                                            <i class="fa fa-car"></i>
-                                        </div>
-                                        <div class="single-content">
-                                            <span>Nationwide</span>
-                                            <h4>Car Transportation</h4>
-                                            <p>Your vehicles are moved safely with specially designed carriers, ensuring
-                                                secure delivery anywhere in India.</p>
-                                            <a href="service.html">LEARN MORE <i class="fa fa-long-arrow-right"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Warehousing & Storage -->
-                            <div class="col-lg-4 col-md-6 col-12">
-                                <div class="single-schedule last">
-                                    <div class="inner">
-                                        <div class="icon">
-                                            <i class="fa fa-archive"></i>
-                                        </div>
-                                        <div class="single-content">
-                                            <span>Secure & Flexible</span>
-                                            <h4>Warehousing / Storage</h4>
-                                            <p>Store your goods safely in our well-maintained warehouses, saving you
-                                                rental
-                                                costs during transfers.</p>
-                                            <a href="service.html">LEARN MORE <i class="fa fa-long-arrow-right"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Insurance Services -->
-                            <div class="col-lg-4 col-md-6 col-12">
-                                <div class="single-schedule last">
-                                    <div class="inner">
-                                        <div class="icon">
-                                            <i class="fa fa-shield"></i>
-                                        </div>
-                                        <div class="single-content">
-                                            <span>Peace of Mind</span>
-                                            <h4>Insurance</h4>
-                                            <p>We recommend the right insurance to protect your valuables, ensuring full
-                                                safety during the move.</p>
-                                            <a href="service.html">LEARN MORE <i class="fa fa-long-arrow-right"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- End Second Row -->
-
-                    </div>
-                </div>
-            </section>
-
-            </section>
-
-
-
-            <!-- Services Section -->
-            <section class="container py-5">
-                <div class="text-center mb-5 service-heading">
-                    <h3>What We Offer</h3><br>
-                    <h6 class="text-muted">Explore our wide range of shipping solutions tailored to your needs.</h6>
-                </div>
-                <div class="row">
-                    <!-- Service 1 -->
-                    <div class="col-md-4 d-flex">
-                        <div class="card service-card shadow-lg flex-fill">
-                            <img src="img/d.PNG" class="card-img-top" alt="Express Delivery">
-                            <div class="card-body text-center">
-                                <h5 class="card-title mt-3">Express Delivery</h5>
-                                <p class="card-text">Swift and reliable delivery to ensure your packages arrive right on
-                                    time.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Service 2 -->
-                    <div class="col-md-4 d-flex">
-                        <div class="card service-card shadow-lg flex-fill">
-                            <img src="img/ptt.avif" class="card-img-top" alt="Package Tracking">
-                            <div class="card-body text-center">
-                                <h5 class="card-title mt-3">Package Tracking</h5>
-                                <p class="card-text">Track your shipments in real time and stay updated every step of
-                                    the way.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Service 3 -->
-                    <div class="col-md-4 d-flex">
-                        <div class="card service-card shadow-lg flex-fill">
-                            <img src="img/f.PNG" class="card-img-top" alt="International Shipping">
-                            <div class="card-body text-center">
-                                <h5 class="card-title mt-3">International Shipping</h5>
-                                <p class="card-text">Reliable worldwide shipping services designed for individuals and
-                                    businesses alike.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- CSS Fix -->
-            <style>
-                /* Default for desktop */
-                .service-heading {
-                    padding-top: 580px;
-                }
-
-                /* Override for mobile */
-                @media (max-width: 767px) {
-                    .service-heading {
-                        padding-top: 30px;
-                    }
-                }
-
-                /* Make all service cards equal height */
-                .service-card {
-                    display: flex;
-                    flex-direction: column;
-                }
-
-                .service-card img {
-                    height: 200px;
-                    /* You can adjust this */
-                    object-fit: cover;
-                }
-
-                .service-card .card-body {
-                    flex-grow: 1;
-                    /* Pushes footer evenly */
-                }
-            </style>
-
-            <!-- Why Choose Us Section -->
-            <!-- Add this in <head> of your HTML -->
-            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-
-            <!-- Why Choose Us Section -->
-            <section class="why-choose-us py-5">
-                <div class="container">
-                    <div class="text-center mb-4">
-                        <h3>Why Choose Runway Packers?</h3>
-                        <p class="text-muted">Delivering safe, reliable, and hassle-free relocation services tailored to
-                            your needs.</p>
-                    </div>
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs overlay" style="background: url('img/ser-bg.PNG') no-repeat center center/cover;margin-top: 10px;height: 300px;">
+            <div class="container">
+                <div class="bread-inner">
                     <div class="row">
-                        <!-- Feature 1 -->
-                        <div class="col-md-3">
-                            <div class="feature-box text-center">
-                                <i class="fa-solid fa-box-open fa-3x mb-3" style="color: #5CAB23;"></i>
-                                <h6>Safe Packing</h6>
-                                <p class="text-muted">We use high-quality packing materials to protect your belongings
-                                    during transit.</p>
-                            </div>
-                        </div>
-                        <!-- Feature 2 -->
-                        <div class="col-md-3">
-                            <div class="feature-box text-center">
-                                <i class="fa-solid fa-headset fa-3x mb-3" style="color: #5CAB23;"></i>
-                                <h6>24/7 Support</h6>
-                                <p class="text-muted">Our team is available round the clock to guide and assist you.</p>
-                            </div>
-                        </div>
-                        <!-- Feature 3 -->
-                        <div class="col-md-3">
-                            <div class="feature-box text-center">
-                                <i class="fa-solid fa-truck-moving fa-3x mb-3" style="color: #5CAB23;"></i>
-                                <h6>Timely Relocations</h6>
-                                <p class="text-muted">We ensure on-time pickups and deliveries without delays.</p>
-                            </div>
-                        </div>
-                        <!-- Feature 4 -->
-                        <div class="col-md-3">
-                            <div class="feature-box text-center">
-                                <i class="fa-solid fa-wallet fa-3x mb-3" style="color: #5CAB23;"></i>
-                                <h6>Cost-Effective Solutions</h6>
-                                <p class="text-muted">Affordable moving services without compromising quality.</p>
-                            </div>
+                        <div class="col-12 text-center text-white">
+                            <h2>Service</h2>
+                            <ul class="bread-list d-inline-block">
+                                <li><a href="index.html" class="text-white">Home</a></li>
+                                <li><i class="icofont-simple-right text-white"></i></li>
+                                <li class="active text-white">Service</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+        <!-- End Breadcrumbs -->
 
-            <!-- CTA Section -->
-            <section class="cta-section">
-                <div class="container">
-                    <h2>Ready to Move with Runway Packers !</h2>
-                    <p>Safe, reliable, and affordable relocation services are just a click away.</p><br>
-                    <a href="contact.html" class="btn btn-lg cta-btn" style="background-color: #5CAB23 ;">Contact Us
-                        Now</a>
+        <!-- Our Services Carousel Section - Added after breadcrumbs -->
+        <section class="our-services-section">
+            <div class="services-title">
+    <center> 
+        <h2 style="margin-bottom: 20px;margin-top: 0px; color: black;">Our Services</span></h2>
+        <p style="max-width: 700px; color: #555; font-size: 1.1rem; line-height: 1.6;margin-bottom: 30px;">
+            We provide innovative web, mobile, and cloud solutions to help businesses grow and stay ahead in the digital era.
+        </p>
+    </center>
+</div>
 
-                </div>
-            </section>
+            <div class="container services-container">
 
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-            <!-- Footer Area -->
-<footer id="footer" class="footer">
-    <!-- Footer Top -->
-    <div class="footer-top">
-        <div class="container">
-            <div class="row">
-                <!-- About Us -->
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="single-footer">
-                        <h2>About Us</h2>
-                        <p>Runway Packers & Movers provides reliable and efficient freight, courier, and cargo
-                            services across India.</p>
-                        <!-- Social Media -->
-                        <ul class="social">
-                            <li><a href="#"><i class="icofont-facebook"></i></a></li>
-                            <li>
-                                <a href="https://wa.me/919789989120" target="_blank">
-                                    <i class="icofont-whatsapp"></i>
-                                </a>
-                            </li>
-                             <li>
-        <a href="tel:+919176867827">
-            <i class="icofont-ui-call"></i>
-        </a>
-    </li>
-                            
-                        </ul>
-                        <!-- End Social Media -->
+                <div class="carousel-wrapper">
+                    <button class="carousel-nav-btn" id="prevBtn" onclick="moveCarousel(-1)">
+                        <i class="fa fa-chevron-left"></i>
+                    </button>
+
+                    <div class="services-carousel">
+                        <div class="carousel-track" id="carouselTrack">
+                            <!-- Service 1 -->
+                            <div class="service-item">
+                        <div class="hexagon-icon">
+                            <svg viewBox="0 0 200 200">
+                                <defs>
+                                    <linearGradient id="hex1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#5CAB23;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#3E8E1D;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <polygon points="100,20 170,60 170,140 100,180 30,140 30,60"
+                                    fill="url(#hex1)" />
+                                <polygon points="100,35 155,65 155,135 100,165 45,135 45,65"
+                                    fill="#5CAB23" opacity="0.7" />
+                            </svg>
+                            <i class="fa fa-globe"></i>
+                        </div>
+                        <h3>Web App Development</h3>
+                        <p>We create beautiful, responsive web applications that deliver exceptional user experiences and drive business growth.</p>
                     </div>
-                </div>
 
-                <!-- Quick Links -->
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="single-footer f-link">
-                        <h2>Quick Links</h2>
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-12">
-                                <ul>
-                                    <li><a href="index.html"><i class="fa fa-caret-right"
-                                                aria-hidden="true"></i>Home</a></li>
-                                    <li><a href="about.html"><i class="fa fa-caret-right"
-                                                aria-hidden="true"></i>About Us</a></li>
-                                    <li><a href="service.html"><i class="fa fa-caret-right"
-                                                aria-hidden="true"></i>Services</a></li>
-                                    <li><a href="contact.html"><i class="fa fa-caret-right"
-                                                aria-hidden="true"></i>Contact</a></li>
-                                </ul>
+                            <!-- Service 2 -->
+                            <div class="service-item">
+                        <div class="hexagon-icon">
+                            <svg viewBox="0 0 200 200">
+                                <defs>
+                                    <linearGradient id="hex2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#5CAB23;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#3E8E1D;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <polygon points="100,20 170,60 170,140 100,180 30,140 30,60"
+                                    fill="url(#hex2)" />
+                                <polygon points="100,35 155,65 155,135 100,165 45,135 45,65"
+                                    fill="#5CAB23" opacity="0.7" />
+                            </svg>
+                            <i class="fa fa-mobile"></i>
+                        </div>
+                        <h3>Mobile App Development</h3>
+                        <p>Our mobile apps are masterpieces of functionality and artistry, providing seamless experiences on iOS and Android platforms.</p>
+                    </div>
+
+                            <!-- Service 3 -->
+                            <div class="service-item">
+                        <div class="hexagon-icon">
+                            <svg viewBox="0 0 200 200">
+                                <defs>
+                                    <linearGradient id="hex2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#5CAB23;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#3E8E1D;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <polygon points="100,20 170,60 170,140 100,180 30,140 30,60"
+                                    fill="url(#hex2)" />
+                                <polygon points="100,35 155,65 155,135 100,165 45,135 45,65"
+                                    fill="#5CAB23" opacity="0.7" />
+                            </svg>
+                          <i class="fa fa-paint-brush"></i>
+                                </div>
+                                <h3>Logo Designing</h3>
+                                <p>We craft distinctive logos that capture your brand identity and leave a lasting impression on your target audience.</p>
+                            </div>
+
+                            <!-- Service 4 -->
+                            <div class="service-item">
+                        <div class="hexagon-icon">
+                            <svg viewBox="0 0 200 200">
+                                <defs>
+                                    <linearGradient id="hex2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#5CAB23;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#3E8E1D;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <polygon points="100,20 170,60 170,140 100,180 30,140 30,60"
+                                    fill="url(#hex2)" />
+                                <polygon points="100,35 155,65 155,135 100,165 45,135 45,65"
+                                    fill="#5CAB23" opacity="0.7" />
+                            </svg>
+                            <i class="fa fa-share-alt"></i>
+                                </div>
+                                <h3>SMO (Social Media Optimization)</h3>
+                                <p>We optimize your social media presence to increase engagement, build community, and amplify your brand voice.</p>
+                            </div>
+
+                            <!-- Service 5 -->
+                            <div class="service-item">
+                        <div class="hexagon-icon">
+                            <svg viewBox="0 0 200 200">
+                                <defs>
+                                    <linearGradient id="hex2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#5CAB23;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#3E8E1D;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <polygon points="100,20 170,60 170,140 100,180 30,140 30,60"
+                                    fill="url(#hex2)" />
+                                <polygon points="100,35 155,65 155,135 100,165 45,135 45,65"
+                                    fill="#5CAB23" opacity="0.7" />
+                            </svg>
+                            <i class="fa fa-search"></i>
+                                </div>
+                                <h3>SEO (Search Engine Optimization)</h3>
+                                <p>We implement proven SEO strategies to boost your online visibility and drive organic traffic to your website.</p>
+                            </div>
+
+                            <!-- Service 6 -->
+                            <div class="service-item">
+                        <div class="hexagon-icon">
+                            <svg viewBox="0 0 200 200">
+                                <defs>
+                                    <linearGradient id="hex2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#5CAB23;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#3E8E1D;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <polygon points="100,20 170,60 170,140 100,180 30,140 30,60"
+                                    fill="url(#hex2)" />
+                                <polygon points="100,35 155,65 155,135 100,165 45,135 45,65"
+                                    fill="#5CAB23" opacity="0.7" />
+                            </svg>
+                            <i class="fa fa-cogs"></i>
+                                </div>
+                                <h3>Digital Transformation Services</h3>
+                                <p>We guide your business through <br> digital transformation, modernizing processes and unlocking new <br>growth opportunities.</p>
+                            </div>
+
+                            <!-- Service 7 -->
+                            <div class="service-item">
+                        <div class="hexagon-icon">
+                            <svg viewBox="0 0 200 200">
+                                <defs>
+                                    <linearGradient id="hex2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#5CAB23;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#3E8E1D;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <polygon points="100,20 170,60 170,140 100,180 30,140 30,60"
+                                    fill="url(#hex2)" />
+                                <polygon points="100,35 155,65 155,135 100,165 45,135 45,65"
+                                    fill="#5CAB23" opacity="0.7" />
+                            </svg>
+                            <i class="fa fa-shopping-cart"></i>
+                                </div>
+                                <h3>Sales And Digital Commerce</h3>
+                                <p>We build powerful e-commerce solutions that convert visitors into customers and maximize your online revenue.</p>
+                            </div>
+                            <!-- Service 8 -->
+                            <div class="service-item">
+                        <div class="hexagon-icon">
+                            <svg viewBox="0 0 200 200">
+                                <defs>
+                                    <linearGradient id="hex2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#5CAB23;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#3E8E1D;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <polygon points="100,20 170,60 170,140 100,180 30,140 30,60"
+                                    fill="url(#hex2)" />
+                                <polygon points="100,35 155,65 155,135 100,165 45,135 45,65"
+                                    fill="#5CAB23" opacity="0.7" />
+                            </svg>
+                             <i class="fa fa-brain"></i>
+                                </div>
+                                <h3>AI Business Process And Consultation</h3>
+                                <p>We leverage AI and machine learning to optimize your business processes and provide strategic consulting solutions.</p>
+                            </div>
+
+                            <!-- Service 9 -->
+                            <div class="service-item">
+                        <div class="hexagon-icon">
+                            <svg viewBox="0 0 200 200">
+                                <defs>
+                                    <linearGradient id="hex2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#5CAB23;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#3E8E1D;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <polygon points="100,20 170,60 170,140 100,180 30,140 30,60"
+                                    fill="url(#hex2)" />
+                                <polygon points="100,35 155,65 155,135 100,165 45,135 45,65"
+                                    fill="#5CAB23" opacity="0.7" />
+                            </svg>
+                            <i class="fa fa-code"></i>
+                                </div>
+                                <h3>Custom Application Development</h3>
+                                <p>We develop tailored applications designed specifically for your unique business requirements and challenges.</p>
+                            </div>
+
+                            <!-- Service 10 -->
+                            <div class="service-item">
+                        <div class="hexagon-icon">
+                            <svg viewBox="0 0 200 200">
+                                <defs>
+                                    <linearGradient id="hex2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#5CAB23;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#3E8E1D;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <polygon points="100,20 170,60 170,140 100,180 30,140 30,60"
+                                    fill="url(#hex2)" />
+                                <polygon points="100,35 155,65 155,135 100,165 45,135 45,65"
+                                    fill="#5CAB23" opacity="0.7" />
+                            </svg>
+                           <i class="fa fa-cloud"></i>
+                                </div>
+                                <h3>Cloud Managed Services</h3>
+                                <p>We provide comprehensive cloud management services ensuring security, scalability, and optimal performance.</p>
+                            </div>
+
+                            <!-- Service 11 -->
+                            <div class="service-item">
+                        <div class="hexagon-icon">
+                            <svg viewBox="0 0 200 200">
+                                <defs>
+                                    <linearGradient id="hex2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#5CAB23;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#3E8E1D;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <polygon points="100,20 170,60 170,140 100,180 30,140 30,60"
+                                    fill="url(#hex2)" />
+                                <polygon points="100,35 155,65 155,135 100,165 45,135 45,65"
+                                    fill="#5CAB23" opacity="0.7" />
+                            </svg>
+                            <i class="fa fa-bullhorn"></i>
+                                </div>
+                                <h3>Digital Marketing</h3>
+                                <p>We create comprehensive digital marketing strategies that reach your audience and drive measurable business results.</p>
+                            </div>
+
+                            <!-- Service 12 -->
+                            <div class="service-item">
+                        <div class="hexagon-icon">
+                            <svg viewBox="0 0 200 200">
+                                <defs>
+                                    <linearGradient id="hex2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#5CAB23;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#3E8E1D;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <polygon points="100,20 170,60 170,140 100,180 30,140 30,60"
+                                    fill="url(#hex2)" />
+                                <polygon points="100,35 155,65 155,135 100,165 45,135 45,65"
+                                    fill="#5CAB23" opacity="0.7" />
+                            </svg>
+                             <i class="fa fa-video-camera"></i>
+                                </div>
+                                <h3>Video and Content Editing</h3>
+                                <p>We produce high-quality video and content editing services that tell your brand story and engage your audience.</p>
                             </div>
                         </div>
                     </div>
+
+                    <button class="carousel-nav-btn" id="nextBtn" onclick="moveCarousel(1)">
+                        <i class="fa fa-chevron-right"></i>
+                    </button>
                 </div>
 
-                <!-- Contact Us (shifted left) -->
-                <div class="col-lg-3 col-md-6 col-12" style="margin-left: 0px;">
-                    <div class="single-footer">
-                        <h2>Contact Us</h2>
-                       
-                        <p style="margin-left: -5px;">+91 91768 67827,<br>+91 9789989120</p>
-                                <p style="margin-left: -5px;"> <a
-                                        href="mailto:runwaypackersandmovers@gmail.com">runwaypackersandmovers@gmail.com</a>
-                                </p>
-                    </div>
-                </div>
+                <div class="carousel-dots" id="dotsContainer"></div>
+            </div>
+        </section>
 
-                <!-- Our Location (shifted left + 2 addresses) -->
-                <div class="col-lg-3 col-md-6 col-12" style="margin-left: 0px;">
-                    <div class="single-footer">
-                        <h2>Our Location</h2>
-                        <p>11B - Raghavendra Road, Vanashakthi Nagar Extn, Puthagaram, Kolathur, Chennai - 600099</p>
-                        <p>248 - Sai Kudil Ground Floor, 8th Cross Street, Ashok Nagar, Thanjavur - 613005</p>
-                        <a href="https://maps.app.goo.gl/bypN6ir4dUjw3XCXA?g_st=com.google.maps.preview.copy" target="_blank" class="btn" style="background-color: rgb(189, 4, 4); 
-          color: white; padding: 10px 20px; border-radius: 5px; display: inline-flex; align-items: center; text-decoration: none; margin-top: 20px;">
-                            <i class="icofont-location-pin" style="margin-right: 8px;"></i> Find Location
-                        </a>
-                    </div>
-                </div>
+        <script>
+          let currentIndex = 0;
+const track = document.getElementById('carouselTrack');
+const dotsContainer = document.getElementById('dotsContainer');
 
+function getItemsPerView() {
+    if (window.innerWidth <= 768) return 1; // mobile
+    if (window.innerWidth <= 1024) return 2; // tablet
+    return 3; // desktop
+}
+
+function updateCarousel() {
+    const items = document.querySelectorAll('.service-item');
+    const itemsPerView = getItemsPerView();
+    const totalItems = items.length;
+    const totalSlides = Math.ceil(totalItems / itemsPerView);
+
+    const itemWidth = items[0].offsetWidth + 30; // item width + gap
+    const offset = -currentIndex * itemsPerView * itemWidth;
+    track.style.transform = `translateX(${offset}px)`;
+
+    // update dots
+    document.querySelectorAll('.dot').forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentIndex);
+    });
+
+    // disable buttons at start/end
+    document.getElementById('prevBtn').disabled = currentIndex === 0;
+    document.getElementById('nextBtn').disabled = currentIndex >= totalSlides - 1;
+}
+
+function initCarousel() {
+    const items = document.querySelectorAll('.service-item');
+    const itemsPerView = getItemsPerView();
+    const totalItems = items.length;
+    const totalSlides = Math.ceil(totalItems / itemsPerView);
+
+    // create dots
+    dotsContainer.innerHTML = '';
+    for (let i = 0; i < totalSlides; i++) {
+        const dot = document.createElement('div');
+        dot.className = 'dot' + (i === 0 ? ' active' : '');
+        dot.onclick = () => {
+            currentIndex = i;
+            updateCarousel();
+        };
+        dotsContainer.appendChild(dot);
+    }
+
+    updateCarousel();
+}
+
+// move carousel
+function moveCarousel(direction) {
+    const itemsPerView = getItemsPerView();
+    const totalItems = document.querySelectorAll('.service-item').length;
+    const totalSlides = Math.ceil(totalItems / itemsPerView);
+
+    currentIndex += direction;
+    if (currentIndex < 0) currentIndex = 0;
+    if (currentIndex >= totalSlides) currentIndex = totalSlides - 1;
+
+    updateCarousel();
+}
+
+// auto-scroll every 5s
+setInterval(() => {
+    const itemsPerView = getItemsPerView();
+    const totalItems = document.querySelectorAll('.service-item').length;
+    const totalSlides = Math.ceil(totalItems / itemsPerView);
+
+    if (currentIndex < totalSlides - 1) {
+        currentIndex++;
+    } else {
+        currentIndex = 0;
+    }
+    updateCarousel();
+}, 5000);
+
+window.addEventListener('resize', () => {
+    // reset currentIndex if needed and update carousel on window resize
+    currentIndex = 0;
+    initCarousel();
+});
+
+document.addEventListener('DOMContentLoaded', initCarousel);
+
+        </script>
+
+        <!-- Services Section -->
+        <section class="container py-5">
+    <div class="text-center mb-5 service-heading">
+        <h3>What We Offer</h3><br>
+        <h6 class="text-muted">Driving digital growth through trusted partnerships, innovation, and measurable impact.</h6>
+    </div>
+    <div class="row">
+        <!-- Offer 1 -->
+        <div class="col-md-4 d-flex">
+            <div class="card service-card shadow-lg flex-fill">
+                <img src="img/qua.jpg" class="card-img-top" alt="Quality & Reliability">
+                <div class="card-body text-center">
+                    <h5 class="card-title mt-3">Quality & Reliability</h5>
+                    <p class="card-text">We follow strict quality standards to ensure every project we deliver meets the highest performance and reliability benchmarks.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Offer 2 -->
+        <div class="col-md-4 d-flex">
+            <div class="card service-card shadow-lg flex-fill">
+                <img src="img/colbrte.jpg" class="card-img-top" alt="Collaborative Partnerships">
+                <div class="card-body text-center">
+                    <h5 class="card-title mt-3">Collaborative Partnerships</h5>
+                    <p class="card-text">We work hand-in-hand with our clients as technology partners, ensuring transparent communication and shared success.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Offer 3 -->
+        <div class="col-md-4 d-flex">
+            <div class="card service-card shadow-lg flex-fill">
+                <img src="img/on-time.PNG" class="card-img-top" alt="On-Time Delivery">
+                <div class="card-body text-center">
+                    <h5 class="card-title mt-3">On-Time Delivery</h5>
+                    <p class="card-text">Our agile development process and efficient project management ensure timely delivery without compromising quality.</p>
+                </div>
             </div>
         </div>
     </div>
-    <!-- Footer Bottom -->
-    <div class="footer-bottom text-center">
-        <div class="container">
-            <p>&copy; 2025 Runway Packers. All Rights Reserved. Designed by
-                <a href="https://popappz.com/" target="_blank"
-                    style="color: green; text-decoration: none; font-weight: bold;">Pop Appz</a>.
-            </p>
+</section>
+
+
+
+        <!-- CSS Fix -->
+        <style>
+            .service-heading {
+                padding-top: 0px;
+            }
+
+            @media (max-width: 767px) {
+                .service-heading {
+                    padding-top: 30px;
+                }
+            }
+
+            .service-card {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .service-card img {
+                height: 200px;
+                object-fit: cover;
+            }
+
+            .service-card .card-body {
+                flex-grow: 1;
+            }
+        </style>
+
+        <!-- Why Choose Us Section -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+        <section class="why-choose-us py-5">
+    <div class="container">
+        <div class="text-center mb-4">
+            <h3  style="margin-bottom: 10px;">Why Choose PopAppz?</h3>
+            <p class="text-muted">Empowering businesses with cutting-edge technology, innovation, and reliable digital solutions.</p>
+        </div>
+        <div class="row">
+            <!-- Feature 1 -->
+            <div class="col-md-3">
+                <div class="feature-box text-center">
+                    <i class="fa-solid fa-lightbulb fa-3x mb-3" style="color: #5CAB23;"></i>
+                    <h6>Innovative Solutions</h6>
+                    <p class="text-muted">We craft creative and future-ready digital products that transform your business vision into reality.</p>
+                </div>
+            </div>
+            <!-- Feature 2 -->
+            <div class="col-md-3">
+                <div class="feature-box text-center">
+                    <i class="fa-solid fa-users-gear fa-3x mb-3" style="color: #5CAB23;"></i>
+                    <h6>Expert Team</h6>
+                    <p class="text-muted">Our skilled professionals combine design, development, and strategy to deliver exceptional results.</p>
+                </div>
+            </div>
+            <!-- Feature 3 -->
+            <div class="col-md-3">
+                <div class="feature-box text-center">
+                    <i class="fa-solid fa-cloud fa-3x mb-3" style="color: #5CAB23;"></i>
+                    <h6>Scalable Technology</h6>
+                    <p class="text-muted">We use modern, secure, and scalable technologies to ensure long-term performance and reliability.</p>
+                </div>
+            </div>
+            <!-- Feature 4 -->
+            <div class="col-md-3">
+                <div class="feature-box text-center">
+                    <i class="fa-solid fa-headset fa-3x mb-3" style="color: #5CAB23;"></i>
+                    <h6>Dedicated Support</h6>
+                    <p class="text-muted">Our customer-first approach ensures constant communication and full-cycle project support.</p>
+                </div>
+            </div>
         </div>
     </div>
-    <!--/ End Footer Bottom -->
-</footer>
-<div class="floating-contact-buttons">
-            <!-- Phone Button -->
-            <a href="tel:+919176867827" class="floating-btn phone-btn" title="Call Us">
+</section>
+
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+    <div class="container">
+        <h2  style="margin-bottom: 10px;">Bring Your Ideas to Life with PopAppz!</h2>
+        <p >We help startups and businesses turn concepts into robust digital solutions with creativity, technology, and strategy.</p><br>
+        <a href="contact.html" class="btn btn-lg cta-btn" style="background-color: #5CAB23;">Contact Us</a>
+    </div>
+</section>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <footer id="footer" class="footer">
+            <!-- Footer Top -->
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <!-- About Us -->
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="single-footer">
+                                <h2>About PopAppz</h2>
+                                <p>PopAppz delivers innovative mobile and web application solutions, helping businesses
+                                    transform ideas into seamless digital experiences.</p>
+                                <!-- Social Media -->
+                                <ul class="social">
+                                    <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="icofont-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/pop_appz/" target="_blank">
+                                            <i class="icofont-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/company/popappz-software-solutions-llp/?viewAsMember=true"
+                                            target="_blank">
+                                            <i class="icofont-linkedin"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Quick Links -->
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="single-footer f-link">
+                                <h2>Quick Links</h2>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <ul>
+                                            <li><a href="index.html"><i class="fa fa-caret-right"
+                                                        aria-hidden="true"></i>Home</a></li>
+                                            <li><a href="about.html"><i class="fa fa-caret-right" aria-hidden="true"></i>About
+                                                    Us</a></li>
+                                            <li><a href="service.html"><i class="fa fa-caret-right"
+                                                        aria-hidden="true"></i>Services</a></li>
+                                            <li><a href="contact.html"><i class="fa fa-caret-right"
+                                                        aria-hidden="true"></i>Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Us -->
+                        <div class="col-lg-3 col-md-6 col-12" style="margin-left: 0px;">
+                            <div class="single-footer">
+                                <h2>Contact Us</h2>
+                                <p style="margin-left: -5px;">+91 8925477787</p>
+                                <p style="margin-left: -5px;"><a
+                                        href="mailto:infopopappz@gmail.com">infopopappz@gmail.com</a></p>
+                            </div>
+                        </div>
+
+                        <!-- Our Location -->
+                        <div class="col-lg-3 col-md-6 col-12" style="margin-left: 0px;">
+                            <div class="single-footer">
+                                <h2>Our Location</h2>
+                                <p>No.129, Shop No.130, Plaza <br> Center,GN Chetty Road,<br> T Nagar, Chennai-17</p>
+
+                                <a href="https://maps.app.goo.gl/4ZX9PYhZb8tYpSTVA" target="_blank" class="btn"
+                                    style="background-color: rgb(189, 4, 35); 
+          color: white; padding: 10px 20px; border-radius: 5px; display: inline-flex; align-items: center; text-decoration: none; margin-top: 20px;">
+                                    <i class="icofont-location-pin" style="margin-right: 8px;"></i> Find Location
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="floating-contact-buttons">
+            <a href="tel:+918925477787" class="floating-btn phone-btn" title="Call Us">
                 <i class="fa fa-phone"></i>
             </a>
-            
-            <!-- WhatsApp Button -->
-            <a href="https://wa.me/919789989120" target="_blank" class="floating-btn whatsapp-btn" title="WhatsApp Us">
+            <a href="https://wa.me/919965207787" target="_blank" class="floating-btn whatsapp-btn" title="WhatsApp Us">
                 <i class="fab fa-whatsapp"></i>
             </a>
         </div>
 
-            <!-- jquery Min JS -->
-            <script src="js/jquery.min.js"></script>
-            <!-- jquery Migrate JS -->
-            <script src="js/jquery-migrate-3.0.0.js"></script>
-            <!-- jquery Ui JS -->
-            <script src="js/jquery-ui.min.js"></script>
-            <!-- Easing JS -->
-            <script src="js/easing.js"></script>
-            <!-- Color JS -->
-            <script src="js/colors.js"></script>
-            <!-- Popper JS -->
-            <script src="js/popper.min.js"></script>
-            <!-- Bootstrap Datepicker JS -->
-            <script src="js/bootstrap-datepicker.js"></script>
-            <!-- Jquery Nav JS -->
-            <script src="js/jquery.nav.js"></script>
-            <!-- Slicknav JS -->
-            <script src="js/slicknav.min.js"></script>
-            <!-- ScrollUp JS -->
-            <script src="js/jquery.scrollUp.min.js"></script>
-            <!-- Niceselect JS -->
-            <script src="js/niceselect.js"></script>
-            <!-- Tilt Jquery JS -->
-            <script src="js/tilt.jquery.min.js"></script>
-            <!-- Owl Carousel JS -->
-            <script src="js/owl-carousel.js"></script>
-            <!-- counterup JS -->
-            <script src="js/jquery.counterup.min.js"></script>
-            <!-- Steller JS -->
-            <script src="js/steller.js"></script>
-            <!-- Wow JS -->
-            <script src="js/wow.min.js"></script>
-            <!-- Magnific Popup JS -->
-            <script src="js/jquery.magnific-popup.min.js"></script>
-            <!-- Counter Up CDN JS -->
-            <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-            <!-- Google Map API Key JS -->
-            <script src="https://maps.google.com/maps/api/js?key=AIzaSyDGqTyqoPIvYxhn_Sa7ZrK5bENUWhpCo0w"></script>
-            <!-- Gmaps JS -->
-            <script src="js/gmaps.min.js"></script>
-            <!-- Map Active JS -->
-            <script src="js/map-active.js"></script>
-            <!-- Bootstrap JS -->
-            <script src="js/bootstrap.min.js"></script>
-            <!-- Main JS -->
-            <script src="js/main.js"></script>
-        </body>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-migrate-3.0.0.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/easing.js"></script>
+        <script src="js/colors.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap-datepicker.js"></script>
+        <script src="js/jquery.nav.js"></script>
+        <script src="js/slicknav.min.js"></script>
+        <script src="js/jquery.scrollUp.min.js"></script>
+        <script src="js/niceselect.js"></script>
+        <script src="js/tilt.jquery.min.js"></script>
+        <script src="js/owl-carousel.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+        <script src="js/steller.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+        <script src="https://maps.google.com/maps/api/js?key=AIzaSyDGqTyqoPIvYxhn_Sa7ZrK5bENUWhpCo0w"></script>
+        <script src="js/gmaps.min.js"></script>
+        <script src="js/map-active.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
 
 </html>
