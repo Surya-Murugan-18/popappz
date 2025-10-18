@@ -269,6 +269,29 @@
                 </div>
             </div>
         </div>
+    <style>
+.breadcrumbs h2 {
+    white-space: nowrap; /* prevents wrapping */
+    /* adjust for desktop */
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .breadcrumbs {
+        padding: 0px 00px;
+        height: auto; /* lets container adjust */
+    }
+
+    .breadcrumbs h2 {
+        font-size: 20px; /* smaller font on mobile */
+        white-space: nowrap; /* keep single line */
+        overflow: hidden; /* prevent overflow */
+        padding-top: 50px;
+       /* optional: show ... if text too long */
+    }
+}
+</style>
+    
         <!-- End Breadcrumbs -->
 
 
@@ -360,14 +383,15 @@
                 <!--/End single-info -->
                 <!-- single-info -->
                 <div class="col-lg-4 col-12">
-                    <div class="single-info">
-                        <i class="icofont-clock-time"></i>
-                        <div class="content">
-                            <h3>Mon - Sat: 9 AM - 6 <center>PM</center></h3>
-                          <center>  <p>24/7 Support</p></center>
-                        </div>
-                    </div>
-                </div>
+    <div class="single-info">
+        <i class="icofont-clock-time"></i>
+        <div class="content">
+            <h3 style="white-space: nowrap;margin-bottom: 10px;">Mon - Sat: 9 AM - 6 PM</h3>
+            <center><p>24/7 Support</p></center>
+        </div>
+    </div>
+</div>
+
                 <!--/End single-info -->
             </div>
         </div>
@@ -394,7 +418,7 @@
                                     transform ideas into seamless digital experiences.</p>
                                 <!-- Social Media -->
                                 <ul class="social">
-                                    <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                                    <li><a href="https://www.facebook.com/PopappzSoftware/"><i class="icofont-facebook"></i></a></li>
                                     <li>
                                         <a href="#">
                                             <i class="icofont-twitter"></i>
